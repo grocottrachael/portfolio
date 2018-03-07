@@ -48,7 +48,16 @@
 }
 
 .u-landmark-x-lrg {
-    margin-bottom: double(double($base-spacing-unit));
+    margin-bottom: (double($base-spacing-unit));
+    
+
+    @include respond-min($bp-medium) {
+        margin-bottom: 3*($base-spacing-unit);
+    }
+
+    @include respond-min(1800px) {
+        margin-bottom: double(double(double($base-spacing-unit));
+    }
 }
 
 .u-landmark-xx-lrg {

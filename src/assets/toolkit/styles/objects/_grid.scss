@@ -1,22 +1,91 @@
-// Import grid settings :
-@import 'grid/grid-settings';
+// // Import grid settings :
+// @import 'grid/grid-settings';
 
 
 
 
-// Generate classes :
-@include gridle_generate_classes();
+// // Generate classes :
+// @include gridle_generate_classes();
 
-[class^="l-grid__unit"] {
-    @include gridle_state( xs ) {
-        width:100%;
+// [class^="l-grid__unit"] {
+//     @include gridle_state( xs ) {
+//         width:100%;
+//     }
+// }
+
+
+// // Just for the styleguide
+
+// .f-container [class^='l-grid__unit'] {
+//     background: #eee;
+//     border: 1px solid #ccc;
+// }
+
+
+.l-grid {
+    @include cf;
+    padding: 0;
+    margin: 0;
+}
+
+.l-grid-unit {
+    @include cf;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.l-grid--split {
+    > .l-grid-unit {
+        width: 50%;
     }
 }
 
+.l-grid--split-no-padding {
+    > .l-grid-unit {
+        width: 50%;
+    }
+}
 
-// Just for the styleguide
+.l-grid--reverse {
 
-.f-container [class^='l-grid__unit'] {
-    background: #eee;
-    border: 1px solid #ccc;
+    > .l-grid-unit:first-child {
+        // slightly better x-browser compat than last;
+        float: right;
+    }
+}
+
+.l-grid--right {
+
+    > .l-grid-unit {
+        float: right;
+    }
+}
+
+.l-grid--padded {
+    margin: 0 -1em;
+
+    > .l-grid-unit {
+        padding: 0 1em;
+    }
+}
+
+.l-grid--flex-lrg {
+    @include respond-min($bp-large) {
+        display: flex;
+
+        > .l-grid-unit {
+            display: flex;
+        }
+    }
+}
+
+.l-grid--1-to-2-flex {
+    @include respond-min($bp-medium) {
+        display: flex;
+
+        > .l-grid-unit {
+            width: 50%;
+        }
+    }
 }

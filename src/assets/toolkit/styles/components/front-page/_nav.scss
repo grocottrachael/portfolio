@@ -6,6 +6,10 @@
     @include respond-min($bp-medium) {
       align-self: center;
       }
+
+      @include respond-min($bp-x-large) {
+        font-size: 24px;
+      }
   }
 
 .nav-list {

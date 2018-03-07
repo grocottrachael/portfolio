@@ -30,7 +30,8 @@ html, body {
     font-family: $ff-sans;
     font-size: $base-font-size;
     line-height: $base-line-height / $base-font-size;
-    text-align: center;
+    text-align: left;
+
 }
 
 h1,
@@ -83,37 +84,7 @@ h2,
 h3,
 .h3 {
     font-size: $fs-4;
-    text-transform: uppercase;
-    color: $c-dark-grey;
-    position: relative;
-    max-width: 100px;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-
-    @include respond-min($bp-medium) {
-       max-width: 300px;
-    }
-
-    &:after {
-        width: 40px;
-        background:$c-dark-grey;
-        height: 4px;
-        content: '';
-        position: absolute;
-        top: 45px;
-        text-align: center;
-        left: 28.5%;
-        right: 0;
-
-
-        @include respond-min($bp-medium) {
-            left: 42%;
-            top: 50px;
-            width: 50px;
-        }
-    }
-
+    
     @include respond-min($bp-medium) {
         font-size: $fs-3;
     }
