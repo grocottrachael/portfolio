@@ -1,0 +1,22 @@
+.about-me {
+    text-align: left;
+    max-width: 550px;
+
+    @include respond-min($bp-medium) {
+        max-width: 65vw;
+    }
+
+    @include respond-min($bp-large) {
+        font-size: 28px;
+        max-width: 52vw;
+    }
+
+    @include respond-min($bp-x-large) {
+        max-width: 47vw;
+    }
+
+    @include respond-min(1800px) {
+        max-width: 40vw;
+        font-size: 32px;
+    }
+}

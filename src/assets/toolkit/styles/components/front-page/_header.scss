@@ -1,40 +1,28 @@
 .header {
-    background-image: url('../images/masthead/masthead-leaves--mob.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: block;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 
-    // @include respond-min($bp-medium) {
-    //   height: 70vh;
 
-    // }
-      
-    @include respond-min($bp-x-large) {
-      background-image: url('../images/masthead/masthead-leaves.jpg');
-      height: 115vh;
-      margin-top: 3rem;
-      background-size: cover;
-      background-position: center;
-    }
+  @include respond-min($bp-medium) {
+    flex-direction: row;
 
+  }
     
 }
 
-.logo {
-  margin: 0 auto;
-  margin-top: 20vh;
-  background-image: url('../images/masthead/masthead-logo.svg');
-  background-size: cover;
-  width: 190px;
-  height: 190px;
+.header-logo {
+  display: inline-block;
+  align-self: left;
+  margin-top: 3*($base-spacing-unit);
 
-    @include respond-min($bp-medium) {
-      width: 275px;
-      height: 275px;
+  svg {
+    max-width: 300px;
+
+  }
+
+  @include respond-min($bp-medium) {
+    margin-top: 0;
     }
-
-
 }

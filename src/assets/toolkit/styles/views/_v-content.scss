@@ -1,0 +1,19 @@
+.v-content {
+    padding: 1.5rem 1rem;
+
+    @include respond-min($bp-medium) {
+        padding: 3rem 5vw;
+      }
+
+    @include respond-min($bp-large) {
+        padding: 3rem 5vw;
+      }
+
+    @include respond-min($bp-x-large) {
+    padding: 3rem 10vw;
+    }
+
+    @include respond-min(1800px) {
+    padding: 4rem 12vw;
+    }
+}

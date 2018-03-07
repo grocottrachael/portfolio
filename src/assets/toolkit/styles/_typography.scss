@@ -37,7 +37,7 @@ h1,
 .h1 {
     font-size: $fs-2;
     text-transform: lowercase;
-    color: $c-light-green;
+    color: $c-dark-grey;
     text-align: center;
     position: relative;
     font-family: $ff-serif;
@@ -50,7 +50,7 @@ h1,
 
     &:after {
         width: 45px;
-        background: #3F524F;
+        background:$c-dark-grey;
         height: 4px;
         content: '';
         position: absolute;
@@ -72,7 +72,7 @@ h2,
 .h2 {
     font-size: $fs-3;
     text-transform: uppercase;
-    color: $c-dark-green;
+    color: $c-dark-grey;
     text-align: center;
 
     @include respond-min($bp-medium) {
@@ -84,7 +84,7 @@ h3,
 .h3 {
     font-size: $fs-4;
     text-transform: uppercase;
-    color: $c-light-green;
+    color: $c-dark-grey;
     position: relative;
     max-width: 100px;
     text-align: center;
@@ -97,7 +97,7 @@ h3,
 
     &:after {
         width: 40px;
-        background: #3F524F;
+        background:$c-dark-grey;
         height: 4px;
         content: '';
         position: absolute;

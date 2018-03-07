@@ -9,7 +9,7 @@ $input-border: 3px solid #3F524F;
 .input-label {
     padding-bottom: .5rem;
     display: block;
-    color: $c-mid-green;
+    color: $c-dark-grey;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -26,7 +26,7 @@ $input-border: 3px solid #3F524F;
     border: $input-border;
     padding: $input-padding;
     padding: rem($input-padding);
-    color: $c-dark-green;
+    color: $c-dark-grey;
     width: 100%;
     margin-bottom: 1rem;
     font-family: $ff-sans;

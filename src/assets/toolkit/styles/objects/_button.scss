@@ -20,7 +20,7 @@ $button-border: 3px solid #3F524F;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    color: $c-dark-green;
+    color: $c-dark-grey;
     font-weight: 600;
     line-height: 24px;
     transition: all .3s;
@@ -55,15 +55,6 @@ $button-border: 3px solid #3F524F;
     padding: 1.5rem;
 }
 
-.btn--positive {
-    background: $c-light-green;
-    color: white;
-    
-    &:hover {
-        background: #B6C0A3;
-        transition: all .3s;
-    }
-    
-}
+
 
 
