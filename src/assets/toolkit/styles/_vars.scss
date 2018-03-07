@@ -1,0 +1,47 @@
+/**
+ * Project variables
+ *
+ * Conventions:
+ * - Base units: prefix $base-
+ * - Colours: prefix $c-
+ * - Breakpoints: prefix $bp-
+ */
+
+ /**
+  * Colours:
+  */
+
+ $c-dark-green: #3F524F;
+ $c-mid-green: #85A26C;
+ $c-light-green: #BDC8A8;
+
+ /* Base units */
+
+$base-font-color: $c-dark-green;
+
+$base-link-color: $c-dark-green;
+
+$base-font-size: 20px;
+
+$base-line-height:  24px;
+
+$base-max-width : 610px;
+
+$base-spacing-unit: $base-line-height;
+
+$base-line-height-ratio: $base-line-height / $base-font-size;
+
+$base-background-color: #fff;
+
+/**
+ * Breakpoints:
+ * Refrain from device names, they mean nothings no more
+ */
+
+$bp-small: em(460px);
+
+$bp-medium: em(720px);
+
+$bp-large: em(960px);
+
+$bp-x-large: em(1280px);

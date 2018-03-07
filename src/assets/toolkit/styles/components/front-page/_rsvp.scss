@@ -1,0 +1,38 @@
+.rsvp {
+    margin-bottom: 3rem;
+}
+
+.rsvp__form {
+    text-align: left;
+
+}
+
+.rsvp__form-actions-container {
+
+    padding-top: .5rem;
+
+    .btn {
+       width: 100%;
+       margin-bottom: 1rem;
+    }
+    
+
+    @include respond-min($bp-medium) {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+
+
+        .btn {
+            flex: 1;
+        }
+
+        .btn + .btn {
+            margin-left: 2rem;
+          }
+
+     }
+
+
+}
+

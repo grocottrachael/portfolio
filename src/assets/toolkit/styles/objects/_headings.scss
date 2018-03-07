@@ -1,0 +1,26 @@
+.section-title {
+    padding-top: 3rem;
+}
+
+.h-underlined {
+    max-width: 150px;
+    position: relative;
+    text-align: center;
+
+    &:after {
+        width: 50px;
+        background: #3F524F;
+        height: 4px;
+        content: '';
+        position: absolute;
+        top: 75px;
+        text-align: center;
+        left: 32%;
+        right: 0;
+
+        @include respond-min($bp-medium) {
+            left: 33%;
+            top: 85px;
+        }
+    }
+} 

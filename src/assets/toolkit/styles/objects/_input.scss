@@ -1,0 +1,43 @@
+/**
+ * Input
+ * Basic styling for input elements
+ */
+
+$input-padding: quarter($base-spacing-unit);
+$input-border: 3px solid #3F524F;
+
+.input-label {
+    padding-bottom: .5rem;
+    display: block;
+    color: $c-mid-green;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.input-label--block {
+    display: block;
+    margin-bottom: .5em;
+    padding-right: 0;
+}
+
+.input-text {
+    @include font-size($base-font-size, 0);
+
+    border: $input-border;
+    padding: $input-padding;
+    padding: rem($input-padding);
+    color: $c-dark-green;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-family: $ff-sans;
+    line-height: 1.5rem;
+}
+
+
+.input-textarea {
+    @include font-size($base-font-size);
+
+    border: $input-border;
+    padding: $input-padding;
+    padding: rem($input-padding);
+}

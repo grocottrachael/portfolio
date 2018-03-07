@@ -1,0 +1,125 @@
+/**
+ * Typography
+ *
+ * $fs- : font-size
+ * $ff- : font-family
+ */
+
+
+// An attempt at a modular scale need to improve this
+// http://www.modularscale.com/
+$modular-scale: 1;
+
+$fs-1 : ($base-font-size * ($modular-scale * 2));
+
+$fs-2 : ($base-font-size * ($modular-scale * 1.6));
+
+$fs-3 : ($base-font-size * ($modular-scale * 1.2));
+
+$fs-4 : ($base-font-size * ($modular-scale * 1));
+
+$fs-5 : ($base-font-size * ($modular-scale * 0.8));
+
+
+
+$ff-sans : "sofia-pro";
+
+$ff-serif : "abril-text";
+
+html, body {
+    font-family: $ff-sans;
+    font-size: $base-font-size;
+    line-height: $base-line-height / $base-font-size;
+    text-align: center;
+}
+
+h1,
+.h1 {
+    font-size: $fs-2;
+    text-transform: lowercase;
+    color: $c-light-green;
+    text-align: center;
+    position: relative;
+    font-family: $ff-serif;
+    font-weight: 400;
+
+
+    @include respond-min($bp-medium) {
+        font-size: $fs-1;
+    }
+
+    &:after {
+        width: 45px;
+        background: #3F524F;
+        height: 4px;
+        content: '';
+        position: absolute;
+        top: 50px;
+        text-align: center;
+        left: 27%;
+        right: 0;
+
+        @include respond-min($bp-medium) {
+            left: 28%;
+            top: 70px;
+            width: 50px;
+
+        }
+    }
+}
+
+h2,
+.h2 {
+    font-size: $fs-3;
+    text-transform: uppercase;
+    color: $c-dark-green;
+    text-align: center;
+
+    @include respond-min($bp-medium) {
+        font-size: $fs-2;
+    }
+}
+
+h3,
+.h3 {
+    font-size: $fs-4;
+    text-transform: uppercase;
+    color: $c-light-green;
+    position: relative;
+    max-width: 100px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+    @include respond-min($bp-medium) {
+       max-width: 300px;
+    }
+
+    &:after {
+        width: 40px;
+        background: #3F524F;
+        height: 4px;
+        content: '';
+        position: absolute;
+        top: 45px;
+        text-align: center;
+        left: 28.5%;
+        right: 0;
+
+
+        @include respond-min($bp-medium) {
+            left: 42%;
+            top: 50px;
+            width: 50px;
+        }
+    }
+
+    @include respond-min($bp-medium) {
+        font-size: $fs-3;
+    }
+}
+
+h4,
+.h4 {
+    font-size: $fs-4;
+}

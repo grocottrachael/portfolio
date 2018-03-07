@@ -1,0 +1,26 @@
+/**
+ * Constrain
+ * -----
+ * Center and restrict width of element
+ */
+
+.constrain {
+  max-width: $base-max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+
+  @include respond-min($bp-medium) {
+    padding: 0;
+
+  }
+}
+
+.constrain--wide {
+  max-width: 1000px;
+}
+
+
+.constrain--relative {
+  position: relative;
+}
