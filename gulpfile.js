@@ -44,7 +44,7 @@ const config = {
   },
   images: {
     toolkit: {
-      src: ['src/assets/toolkit/images/**/*', 'src/favicon.png'],
+      src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
       dest: 'dist/assets/toolkit/images',
       watch: 'src/assets/toolkit/images/**/*',
     },
@@ -116,7 +116,7 @@ gulp.task('images', ['favicon'], () => {
 });
 
 gulp.task('favicon', () => {
-  return gulp.src('src/favicon.png')
+  return gulp.src('src/favicon.ico')
   .pipe(gulp.dest(config.dest));
 });
 
