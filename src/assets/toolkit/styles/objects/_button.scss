@@ -4,8 +4,8 @@
  * Visual representation of a button
  */
 
-$button-background: none;
-$button-border: 3px solid #3F524F;
+$button-background: rgb(233, 233, 233);
+$button-border: 3px solid #454545;
 
 
 .btn {
@@ -34,7 +34,7 @@ $button-border: 3px solid #3F524F;
     }
 
     &:hover {
-        background: #E1E6D7;
+        background: rgb(198, 198, 198);
         transition: all .3s;
     }
 

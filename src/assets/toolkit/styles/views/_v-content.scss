@@ -10,10 +10,14 @@
       }
 
     @include respond-min($bp-x-large) {
-    padding: 4rem 10vw;
+    padding: 4rem 6vw;
     }
 
     @include respond-min(1800px) {
-    padding: 5rem 12vw;
+    padding: 5rem 8vw;
     }
+
+    @include respond-min(2200px) {
+      padding: 5rem 12vw;
+      }
 }

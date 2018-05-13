@@ -8,13 +8,10 @@
 }
 
 .work-project__img {
+
     @include respond-min($bp-medium) {
         max-height: 90vh;
         overflow: hidden;
-
-        img {
-            object-fit: cover;
-        }
     }
 }
 

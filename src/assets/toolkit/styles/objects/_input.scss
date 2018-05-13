@@ -4,7 +4,7 @@
  */
 
 $input-padding: quarter($base-spacing-unit);
-$input-border: 3px solid #3F524F;
+$input-border: 3px solid #454545;
 
 .input-label {
     padding-bottom: .5rem;
@@ -27,10 +27,10 @@ $input-border: 3px solid #3F524F;
     padding: $input-padding;
     padding: rem($input-padding);
     color: $c-dark-grey;
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 250px;
     font-family: $ff-sans;
     line-height: 1.5rem;
+    text-transform: uppercase;
 }
 
 
