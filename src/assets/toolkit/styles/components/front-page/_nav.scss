@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: row;
     align-self: flex-end;
+    text-transform: uppercase;
 
     @include respond-min($bp-medium) {
       align-self: center;
       }
 
-      @include respond-min($bp-x-large) {
-        font-size: 24px;
-      }
+      // .nav-list__item {
+      //   position: relative;
+      //   transition: all .2s ease-in-out;
+
   }
 
 .nav-list {
@@ -34,9 +36,27 @@
     padding-right:0;
   }
 
-  a:hover {
-    color: $c-light-grey;
-  }
+  // a:hover {
+  //   color: $c-light-grey;
+  //   transition: .15s color ease-in-out;
+  //   text-decoration: underline;
+
+  //   a:after {
+
+  //     content: "";
+  //     height: 2px;
+  //     width: 100%;
+  //     position: absolute;
+  //     left: 0;
+  //     bottom: 0;
+  //     background-color: #fff;
+  //     -webkit-transform: scaleX(0);
+  //     -ms-transform: scaleX(0);
+  //     transform: scaleX(0);
+  //     -webkit-transition: -webkit-transform .2s ease-in-out,width .1s ease-in-out;
+  //     transition: transform .2s ease-in-out,width .1s ease-in-out;
+  //     }
+  //   }
 }
 
 // .nav--mobile {
@@ -59,6 +79,54 @@
 //   padding: .75rem 0;
 
 // }
+
+.nav-link {
+  position: relative;
+
+  &:hover {
+    color: $c-light-grey;
+    text-decoration: none;
+
+    &:after {
+      width: 100%;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition: -webkit-transform .2s ease-in-out,width .1s ease-in-out;
+      transition: transform .2s ease-in-out,width .1s ease-in-out;
+    }
+  }
+
+  &:after {
+        
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: $c-light-grey;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: -webkit-transform .2s ease-in-out,width .1s ease-in-out;
+    transition: transform .2s ease-in-out,width .1s ease-in-out;
+    }
+
+
+  }
+
+  .nav-list__item--active {
+    &:after { 
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      background-color: $c-light-grey;
+    }
+  }
 
 .nav--mobile--open {
   display: flex;

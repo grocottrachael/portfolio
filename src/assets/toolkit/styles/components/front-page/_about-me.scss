@@ -13,6 +13,7 @@
 
     @include respond-min($bp-x-large) {
         max-width: 47vw;
+        padding: 3.5rem 0;
     }
 
     @include respond-min(1800px) {

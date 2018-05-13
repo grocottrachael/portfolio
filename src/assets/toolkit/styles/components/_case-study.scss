@@ -1,0 +1,56 @@
+.case-study-about {
+    font-weight: bolder;
+    margin-bottom: double($base-spacing-unit);
+
+    span {
+        line-height: 1;
+
+        // @include respond-min($bp-medium) {
+        //     font-size: 16px;
+        // }
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    @include respond-min($bp-medium) {
+        padding-bottom: 0;
+    }
+}
+
+.case-study-body {
+
+    @include respond-min($bp-large) {
+        margin-left: 5rem;
+    }
+}
+
+.case-study-para {
+    @include respond-min($bp-large) {
+        max-width: 750px;
+    }
+}
+
+.case-study-para--bold {
+    font-weight: 400;
+}
+
+.case-study-img {
+    padding: 1rem 0 3rem 0;
+
+    @include respond-min($bp-large) {
+        padding: 2rem 0;
+    }
+}
+
+.case-study-video {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: $base-spacing-unit;
+
+    video {
+        width: 100%;
+    }
+}
+

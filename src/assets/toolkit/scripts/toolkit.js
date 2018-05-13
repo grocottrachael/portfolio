@@ -4,6 +4,8 @@
 
 'use strict';
 
+import './main';
+
 // Toggle modifiers
 
 (function(){

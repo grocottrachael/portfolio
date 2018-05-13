@@ -18,7 +18,8 @@ class ParallaxImg {
 
     constrictView () {
         const originalHeight = this.imageElement.clientHeight;
-        this.elementHeight = originalHeight * .8;
+        this.elementHeight = originalHeight * .9;
+        this.translateDistance = originalHeight * .1;
         this.element.style.height = `${this.elementHeight}px`;
         this.element.style.overflow = 'hidden';
 
@@ -32,8 +33,8 @@ class ParallaxImg {
         if (windowScrollDistance < 0 || windowScrollDistance > this.totalScrollDistance) {
             return;
         } else {
-            const translatePercentage = (windowScrollDistance / this.totalScrollDistance) * 25;
-            this.imageElement.style.transform = `translateY(-${translatePercentage}%)`;
+            const translatePercentage = (windowScrollDistance / this.totalScrollDistance) * 100;
+            this.imageElement.style.transform = `translateY(-${((this.translateDistance / 100) * translatePercentage).toFixed(3)}px)`;
         }
     }
 

@@ -1,0 +1,22 @@
+.about {
+    max-width: 550px;
+
+    @include respond-min($bp-medium) {
+        max-width: 65vw;
+    }
+
+    @include respond-min($bp-large) {
+        font-size: 24px;
+        max-width: 52vw;
+    }
+
+    @include respond-min($bp-x-large) {
+        max-width: 58vw;
+        padding: 1rem 0;
+    }
+
+    @include respond-min(1800px) {
+        max-width: 65vw;
+        font-size: 28px;
+    }
+}

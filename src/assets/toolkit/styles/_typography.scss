@@ -37,44 +37,19 @@ html, body {
 h1,
 .h1 {
     font-size: $fs-2;
-    text-transform: lowercase;
     color: $c-dark-grey;
-    text-align: center;
     position: relative;
-    font-family: $ff-serif;
     font-weight: 400;
-
 
     @include respond-min($bp-medium) {
         font-size: $fs-1;
-    }
-
-    &:after {
-        width: 45px;
-        background:$c-dark-grey;
-        height: 4px;
-        content: '';
-        position: absolute;
-        top: 50px;
-        text-align: center;
-        left: 27%;
-        right: 0;
-
-        @include respond-min($bp-medium) {
-            left: 28%;
-            top: 70px;
-            width: 50px;
-
-        }
     }
 }
 
 h2,
 .h2 {
     font-size: $fs-3;
-    text-transform: uppercase;
     color: $c-dark-grey;
-    text-align: center;
 
     @include respond-min($bp-medium) {
         font-size: $fs-2;

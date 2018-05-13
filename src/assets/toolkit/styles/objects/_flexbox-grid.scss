@@ -90,9 +90,12 @@
   }
   
   .col-xs-3 {
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
+
+    @include respond-min($bp-medium) {
+      -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+      max-width: 25%;
+    }
   }
   
   .col-xs-4 {
