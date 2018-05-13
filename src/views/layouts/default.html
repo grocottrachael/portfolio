@@ -50,14 +50,18 @@
 
             </a>
 
+
+
+
             <div class="nav">
 
                 <ul class="nav-list list-plain">
                     <li class="nav-list__item">
-                        <a href="/" class="nav-link">work</a>
+                        <a href="/" class="nav-link {{#ifEquals name 'work'}}nav-list__item--active{{/ifEquals}}">work</a>
                     </li>
+
                     <li class="nav-list__item">
-                        <a href="/about.html" class="nav-link">about</a>
+                        <a href="/about.html" class="nav-link {{#ifEquals name 'about'}}nav-list__item--active{{/ifEquals}}">about</a>
                     </li>
                 </ul>
 

@@ -14,6 +14,10 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const webpack = require('webpack');
 
+Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+    return (arg1 === arg2) ? options.fn(this) : options.inverse(this);
+});
+
 // configuration
 const config = {
   dev: gutil.env.dev,
