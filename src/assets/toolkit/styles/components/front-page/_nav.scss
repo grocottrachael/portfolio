@@ -116,17 +116,19 @@
 
   }
 
-  .nav-list__item--active {
-    &:after { 
-      content: "";
-      height: 2px;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      background-color: $c-light-grey;
-    }
+.nav-list__item--active {
+  // color: red;
+  &:after { 
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background-color: $c-light-grey;
+    transform: none;
   }
+}
 
 .nav--mobile--open {
   display: flex;
