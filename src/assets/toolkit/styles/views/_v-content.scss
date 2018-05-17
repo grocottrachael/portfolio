@@ -1,23 +1,23 @@
 .v-content {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 0 1rem;
 
     @include respond-min($bp-medium) {
-        padding: 3rem 5vw;
+        padding: 3rem 5vw 0 5vw;
       }
 
     @include respond-min($bp-large) {
-        padding: 3rem 5vw;
+        padding: 3rem 5vw 0 5vw;
       }
 
     @include respond-min($bp-x-large) {
-    padding: 4rem 6vw;
+    padding: 4rem 6vw 0 6vw;
     }
 
     @include respond-min(1800px) {
-    padding: 5rem 8vw;
+    padding: 5rem 8vw 0 8vw;
     }
 
     @include respond-min(2200px) {
-      padding: 5rem 12vw;
+      padding: 5rem 12vw 0 12vw;
       }
 }

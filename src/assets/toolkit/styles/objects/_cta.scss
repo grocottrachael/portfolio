@@ -1,0 +1,16 @@
+.cta {
+    font-weight: 700;
+
+    .icon-arrow-right {
+        width: rem(17px);
+        height: rem(12px);
+        margin-left: rem(8px);
+        vertical-align: middle;
+        fill: red;
+        transition: transform .3s ease-in-out;
+    }
+
+    &:hover .icon-arrow-right {
+        transform: translateX(.25rem);
+    }
+}
