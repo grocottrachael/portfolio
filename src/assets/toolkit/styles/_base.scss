@@ -13,19 +13,18 @@ html {
     min-height: 100%;
     text-align: left;
     -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-     -webkit-font-smoothing: antialiased;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-  margin: 0;
-
+    margin: 0;
 }
 
 p {
     a:after {
         background: $base-font-color;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         width: 100%;
         height: 3px;
         content: '';
@@ -34,20 +33,15 @@ p {
         text-align: center;
         left: 0;
         right: 0;
-        transition: transform .2s ease-in-out;
-
+        transition: transform 0.2s ease-in-out;
     }
 
     a:hover {
         &:after {
-            background:$c-light-grey;
-            transition: transform .2s ease-in-out;
-
+            // background:$c-light-grey;
+            transition: transform 0.2s ease-in-out;
         }
-
     }
-
-    
 }
 
 *,
@@ -56,12 +50,10 @@ p {
     box-sizing: inherit;
 }
 
-
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }
-
 
 /**
  * https://github.com/inuitcss/base.images/blob/master/_base.images.scss
@@ -78,8 +70,6 @@ img {
     vertical-align: middle; /* [3] */
 }
 
-
-
 /**
  * Links
  */
@@ -88,24 +78,23 @@ a {
     color: $base-link-color;
     text-decoration: none;
     position: relative;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
-        transition: .15s color ease-in-out;
+        transition: 0.15s color ease-in-out;
     }
-    
 
     // @include respond-min($bp-medium) {
     //     &:after {
     //         transition: all .3s ease-in-out;
     //         content: '';
-    
+
     //     }
-    
+
     //     &:hover {
     //         color: $c-light-grey;
     //         transition: all .2s ease-in-out;
-    
+
     //         &:after {
     //             background:$c-light-grey;
     //             transition: all .3s ease-in-out;
@@ -118,12 +107,9 @@ a {
     //             left: 0;
     //             right: 0;
     //         }
-    
+
     //     }
     // }
-
-
-
 }
 
 /**

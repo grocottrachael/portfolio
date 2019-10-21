@@ -7,30 +7,33 @@
  * - Breakpoints: prefix $bp-
  */
 
- /**
+/**
   * Colours:
   */
 
- $c-dark-grey: #454545;
- $c-light-grey: #8E8E8E;
+$c-black: #161616;
+$c-mint: #0aeed3;
+$c-yellow: #ffe600;
+$c-pink: #ff77e1;
+$c-white: #fcfcfc;
 
- /* Base units */
+/* Base units */
 
-$base-font-color: $c-dark-grey;
+$base-font-color: $c-black;
 
-$base-link-color: $c-dark-grey;
+$base-link-color: $c-black;
 
-$base-font-size: 20px;
+$base-font-size: 32px;
 
-$base-line-height:  32px;
+$base-line-height: 32px;
 
-$base-max-width : 610px;
+$base-max-width: 610px;
 
 $base-spacing-unit: $base-line-height;
 
 $base-line-height-ratio: $base-line-height / $base-font-size;
 
-$base-background-color: #fff;
+$base-background-color: $c-white;
 
 /**
  * Breakpoints:

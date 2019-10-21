@@ -5,39 +5,36 @@
  * $ff- : font-family
  */
 
-
 // An attempt at a modular scale need to improve this
 // http://www.modularscale.com/
 $modular-scale: 1;
 
-$fs-1 : ($base-font-size * ($modular-scale * 2));
+$fs-1: ($base-font-size * ($modular-scale * 2));
 
-$fs-2 : ($base-font-size * ($modular-scale * 1.6));
+$fs-2: ($base-font-size * ($modular-scale * 1.6));
 
-$fs-3 : ($base-font-size * ($modular-scale * 1.2));
+$fs-3: ($base-font-size * ($modular-scale * 1.2));
 
-$fs-4 : ($base-font-size * ($modular-scale * 1));
+$fs-4: ($base-font-size * ($modular-scale * 1));
 
-$fs-5 : ($base-font-size * ($modular-scale * 0.8));
+$fs-5: ($base-font-size * ($modular-scale * 0.8));
 
+$ff-sans: 'sofia-pro';
 
+$ff-serif: 'abril-text';
 
-$ff-sans : "sofia-pro";
-
-$ff-serif : "abril-text";
-
-html, body {
+html,
+body {
     font-family: $ff-sans;
     font-size: $base-font-size;
     line-height: $base-line-height / $base-font-size;
     text-align: left;
-
 }
 
 h1,
 .h1 {
     font-size: $fs-2;
-    color: $c-dark-grey;
+    color: $c-black;
     position: relative;
     font-weight: 400;
 
@@ -49,7 +46,7 @@ h1,
 h2,
 .h2 {
     font-size: $fs-3;
-    color: $c-dark-grey;
+    color: $c-black;
 
     @include respond-min($bp-medium) {
         font-size: $fs-2;
@@ -59,7 +56,7 @@ h2,
 h3,
 .h3 {
     font-size: $fs-4;
-    
+
     @include respond-min($bp-medium) {
         font-size: $fs-3;
     }

@@ -7,16 +7,16 @@ $input-padding: quarter($base-spacing-unit);
 $input-border: 3px solid #454545;
 
 .input-label {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     display: block;
-    color: $c-dark-grey;
+    color: $c-black;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .input-label--block {
     display: block;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     padding-right: 0;
 }
 
@@ -26,7 +26,7 @@ $input-border: 3px solid #454545;
     border: $input-border;
     padding: $input-padding;
     padding: rem($input-padding);
-    color: $c-dark-grey;
+    color: $c-black;
     width: 100%;
     font-family: $ff-sans;
     line-height: 1.5rem;
@@ -36,10 +36,8 @@ $input-border: 3px solid #454545;
     @include respond-min($bp-medium) {
         width: 250px;
         text-align: left;
-
-      }
+    }
 }
-
 
 .input-textarea {
     @include font-size($base-font-size);

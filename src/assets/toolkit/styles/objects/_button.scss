@@ -7,7 +7,6 @@
 $button-background: rgb(233, 233, 233);
 $button-border: 3px solid #454545;
 
-
 .btn {
     cursor: pointer;
     background: $button-background;
@@ -16,15 +15,14 @@ $button-border: 3px solid #454545;
     font: inherit;
     margin: 0;
     overflow: visible;
-    padding: .5rem;
+    padding: 0.5rem;
     text-align: center;
     vertical-align: middle;
     text-transform: uppercase;
-    color: $c-dark-grey;
+    color: $c-black;
     font-weight: 600;
     line-height: 24px;
-    transition: all .3s;
-
+    transition: all 0.3s;
 
     &,
     &:hover,
@@ -35,12 +33,9 @@ $button-border: 3px solid #454545;
 
     &:hover {
         background: rgb(198, 198, 198);
-        transition: all .3s;
+        transition: all 0.3s;
     }
-
 }
-
-
 
 /**
  * Modifiers
@@ -50,11 +45,6 @@ $button-border: 3px solid #454545;
     padding: 0.5rem;
 }
 
-
 .btn--large {
     padding: 1.5rem;
 }
-
-
-
-
