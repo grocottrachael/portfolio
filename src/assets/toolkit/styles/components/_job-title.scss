@@ -1,0 +1,33 @@
+.job-title {
+    grid-column: 6 / 9;
+    grid-row: 9 / 21;
+    position: relative;
+    background-color: $c-pink;
+    writing-mode: vertical-rl;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+
+    @include respond-min($bp-medium) {
+        grid-column: 8 / 10;
+        grid-row: 4 / 19;
+    }
+
+    @include respond-min($bp-large) {
+        grid-column: 6 / 10;
+        grid-row: 5 / 13;
+        writing-mode: horizontal-tb;
+        padding-left: 30px;
+    }
+}

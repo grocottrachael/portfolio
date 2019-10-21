@@ -2,10 +2,33 @@
     display: table;
     height: 100%;
     width: 100%;
+    text-transform: uppercase;
 }
 
 p,
 img {
     display: table-cell;
     vertical-align: middle;
+}
+
+.text-positioner--vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+
+    @include respond-min($bp-large) {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    p,
+    img {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }

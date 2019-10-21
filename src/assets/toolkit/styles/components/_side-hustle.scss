@@ -1,8 +1,8 @@
-.name {
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
+.side-hustle {
+    grid-column: 1 / 9;
+    grid-row: 21 / 25;
     position: relative;
-    background-color: $c-mint;
+    background-color: $c-white;
     // font-size: 77px;
     text-align: center;
 
@@ -17,12 +17,12 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 1 / 10;
-        grid-row: 1 / 4;
+        grid-column: 1 / 8;
+        grid-row: 19 / 22;
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 8;
-        grid-row: 1 / 5;
+        grid-column: 4 / 9;
+        grid-row: 17 / 21;
     }
 }

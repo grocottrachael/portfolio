@@ -1,10 +1,8 @@
-.name {
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
+.yellow {
+    grid-column: 9 / 13;
+    grid-row: 19 / 25;
     position: relative;
-    background-color: $c-mint;
-    // font-size: 77px;
-    text-align: center;
+    background-color: $c-yellow;
 
     &:after {
         position: absolute;
@@ -17,12 +15,12 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 1 / 10;
-        grid-row: 1 / 4;
+        grid-column: 10 / 13;
+        grid-row: 17 / 19;
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 8;
-        grid-row: 1 / 5;
+        grid-column: 10 / 13;
+        grid-row: 5 / 9;
     }
 }

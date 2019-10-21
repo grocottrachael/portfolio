@@ -1,10 +1,8 @@
-.name {
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
+.circles--white {
+    grid-column: 11 / 13;
+    grid-row: 6 / 19;
     position: relative;
-    background-color: $c-mint;
-    // font-size: 77px;
-    text-align: center;
+    background-color: $c-white;
 
     &:after {
         position: absolute;
@@ -17,12 +15,12 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 1 / 10;
-        grid-row: 1 / 4;
+        grid-column: 11 / 13;
+        grid-row: 4 / 17;
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 8;
-        grid-row: 1 / 5;
+        grid-column: 10 / 12;
+        grid-row: 9 /17;
     }
 }

@@ -1,13 +1,13 @@
-.verticle-stripe {
-    grid-column: 1 / 9;
-    grid-row: 4 / 9;
+.mint-stripe {
+    grid-column: 1 / 6;
+    grid-row: 9 / 13;
     position: relative;
     background: repeating-linear-gradient(
-        to right,
+        -54deg,
         #000,
         #000 20px,
-        #fff 20px,
-        #fff 42px
+        $c-mint 20px,
+        $c-mint 42px
     );
 
     &:after {
@@ -19,21 +19,20 @@
         bottom: -10px;
         content: '';
     }
-
     @include respond-min($bp-medium) {
-        grid-column: 1 / 9;
-        grid-row: 4 / 12;
+        grid-column: 1 / 8;
+        grid-row: 12 / 15;
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 6;
-        grid-row: 5 / 17;
+        grid-column: 6 / 10;
+        grid-row: 13 / 17;
         background: repeating-linear-gradient(
-            to right,
+            -54deg,
             #000,
             #000 20px,
-            #fff 20px,
-            #fff 52px
+            $c-mint 20px,
+            $c-mint 52px
         );
     }
 }

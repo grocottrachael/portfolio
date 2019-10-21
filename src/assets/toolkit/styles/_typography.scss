@@ -24,11 +24,15 @@ $ff-sans: 'silkablack';
 $ff-serif: 'silkablack';
 
 html,
-body {
+body,
+p {
     font-family: 'silkablack';
-    font-size: $base-font-size;
+    font-size: calc(32px + 20 * ((100vw - 320px) / 800));
     line-height: $base-line-height / $base-font-size;
-    text-align: left;
+    // text-align: left;
+    @include respond-min($bp-medium) {
+        font-size: calc(36px + 24 * ((100vw - 320px) / 800));
+    }
 }
 
 h1,

@@ -1,9 +1,9 @@
-.name {
-    grid-column: 1 / 13;
-    grid-row: 1 / 4;
+.triangles--yellow {
+    grid-column: 1 / 6;
+    grid-row: 13 / 17;
     position: relative;
-    background-color: $c-mint;
-    // font-size: 77px;
+    background-color: $c-yellow;
+
     text-align: center;
 
     &:after {
@@ -17,12 +17,12 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 1 / 10;
-        grid-row: 1 / 4;
+        grid-column: 3 / 8;
+        grid-row: 15 / 19;
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 8;
-        grid-row: 1 / 5;
+        grid-column: 1 / 4;
+        grid-row: 17 / 21;
     }
 }

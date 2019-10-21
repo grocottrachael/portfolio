@@ -1,6 +1,6 @@
 .triangles--white {
-    grid-column: span 5;
-    grid-row: span 4;
+    grid-column: 9 / 13;
+    grid-row: 4 / 6;
     position: relative;
     background-color: $c-white;
 
@@ -14,5 +14,15 @@
         top: -10px;
         bottom: -10px;
         content: '';
+    }
+
+    @include respond-min($bp-medium) {
+        grid-column: 10 / 13;
+        grid-row: 1 / 4;
+    }
+
+    @include respond-min($bp-large) {
+        grid-column: 8 / 13;
+        grid-row: 1 / 5;
     }
 }
