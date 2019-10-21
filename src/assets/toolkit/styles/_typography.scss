@@ -19,13 +19,13 @@ $fs-4: ($base-font-size * ($modular-scale * 1));
 
 $fs-5: ($base-font-size * ($modular-scale * 0.8));
 
-$ff-sans: 'sofia-pro';
+$ff-sans: 'silkablack';
 
-$ff-serif: 'abril-text';
+$ff-serif: 'silkablack';
 
 html,
 body {
-    font-family: $ff-sans;
+    font-family: 'silkablack';
     font-size: $base-font-size;
     line-height: $base-line-height / $base-font-size;
     text-align: left;

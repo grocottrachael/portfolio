@@ -1,0 +1,11 @@
+.text-positioner {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+p,
+img {
+    display: table-cell;
+    vertical-align: middle;
+}

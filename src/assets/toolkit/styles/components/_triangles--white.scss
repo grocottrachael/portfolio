@@ -1,0 +1,18 @@
+.triangles--white {
+    grid-column: span 5;
+    grid-row: span 4;
+    position: relative;
+    background-color: $c-white;
+
+    text-align: center;
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+}
