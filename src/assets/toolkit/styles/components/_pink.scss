@@ -45,6 +45,21 @@
     }
 
     @include respond-min($bp-x-large) {
-        font-size: calc(32px + 18 * ((100vw - 320px) / 800));
+        font-size: calc(32px + 16 * ((100vw - 320px) / 800));
+    }
+}
+
+.insta {
+    display: block;
+
+    @include respond-min($bp-large) {
+        display: none !important;
+    }
+}
+
+.instagram {
+    display: none !important;
+    @include respond-min($bp-large) {
+        display: block !important;
     }
 }
