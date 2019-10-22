@@ -22,26 +22,6 @@ body {
 }
 
 p {
-    a:after {
-        background: $base-font-color;
-        transition: all 0.3s ease-in-out;
-        width: 100%;
-        height: 3px;
-        content: '';
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        left: 0;
-        right: 0;
-        transition: transform 0.2s ease-in-out;
-    }
-
-    a:hover {
-        &:after {
-            // background:$c-light-grey;
-            transition: transform 0.2s ease-in-out;
-        }
-    }
 }
 
 *,
@@ -75,41 +55,17 @@ img {
  */
 
 a {
-    color: $base-link-color;
+    background: linear-gradient(to right, $c-black 0%, $c-black 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0px 0px;
+    color: $c-black;
     text-decoration: none;
-    position: relative;
-    transition: all 0.2s ease-in-out;
+    transition: background-size 0.2s;
+}
 
-    &:hover {
-        transition: 0.15s color ease-in-out;
-    }
-
-    // @include respond-min($bp-medium) {
-    //     &:after {
-    //         transition: all .3s ease-in-out;
-    //         content: '';
-
-    //     }
-
-    //     &:hover {
-    //         color: $c-light-grey;
-    //         transition: all .2s ease-in-out;
-
-    //         &:after {
-    //             background:$c-light-grey;
-    //             transition: all .3s ease-in-out;
-    //             width: 100%;
-    //             height: 3px;
-    //             content: '';
-    //             position: absolute;
-    //             bottom: -3px;
-    //             text-align: center;
-    //             left: 0;
-    //             right: 0;
-    //         }
-
-    //     }
-    // }
+a:hover {
+    background-size: 100% 100%;
 }
 
 /**

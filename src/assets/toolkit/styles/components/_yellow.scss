@@ -24,3 +24,29 @@
         grid-row: 5 / 9;
     }
 }
+
+.social--yellow {
+    font-size: calc(18px + 8 * ((100vw - 320px) / 800));
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+
+    li {
+        padding: 10px;
+    }
+
+    @include respond-min(480px) {
+        font-size: calc(30px + 8 * ((100vw - 320px) / 800));
+    }
+
+    @include respond-min($bp-medium) {
+        display: none;
+    }
+}
