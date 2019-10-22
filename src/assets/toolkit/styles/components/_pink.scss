@@ -21,3 +21,30 @@
         grid-row: 17 / 25;
     }
 }
+
+.social--pink {
+    display: none;
+
+    @include respond-min($bp-medium) {
+        font-size: calc(24px + 8 * ((100vw - 320px) / 800));
+        text-transform: uppercase;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: row;
+
+        li {
+            padding: 10px;
+        }
+    }
+
+    @include respond-min($bp-large) {
+        flex-direction: column;
+    }
+
+    @include respond-min($bp-x-large) {
+        font-size: calc(32px + 18 * ((100vw - 320px) / 800));
+    }
+}
