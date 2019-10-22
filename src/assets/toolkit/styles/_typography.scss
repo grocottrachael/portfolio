@@ -33,6 +33,10 @@ p {
     @include respond-min($bp-medium) {
         font-size: calc(36px + 24 * ((100vw - 320px) / 800));
     }
+
+    @media screen and (max-height: 655px) {
+        font-size: calc(32px + 20 * ((100vw - 320px) / 800));
+    }
 }
 
 h1,
