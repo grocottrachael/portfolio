@@ -89,7 +89,5 @@ table,
 fieldset,
 figure,
 pre {
-    margin-bottom: $base-spacing-unit;
-    margin-bottom: rem($base-spacing-unit);
-    margin-top: 0;
+    margin: 0;
 }
