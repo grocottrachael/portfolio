@@ -42,16 +42,26 @@
     @include respond-min(800px) {
         display: none;
     }
+
+    @media screen and (max-height: 850px) {
+        display: none;
+    }
 }
 
 .circle-4 {
     @include respond-min(960px) {
         display: none;
     }
+    @media screen and (max-height: 720px) {
+        display: none;
+    }
 }
 
 .circle-3 {
     @include respond-min(960px) {
+        display: none;
+    }
+    @media screen and (max-height: 500px) {
         display: none;
     }
 }
