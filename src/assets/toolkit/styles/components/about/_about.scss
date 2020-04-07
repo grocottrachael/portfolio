@@ -11,11 +11,16 @@
         border-bottom: 0;
 
     @include respond-min($bp-medium) {
-        grid-template-rows: repeat(24, 1fr);
         height: 99.25vh;
+
+    }
+
+    @media screen and (max-height: 1200px) {
+        grid-template-rows: repeat(5, minmax(90px, auto));
     }
 
     @include respond-min($bp-large) {
+        grid-template-rows: repeat(24, 1fr);
 
     }
 }

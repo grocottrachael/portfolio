@@ -24,13 +24,9 @@
     }
 
     @include respond-min($bp-large) {
-        grid-column: 3 /11;
+        grid-column: 3 /13;
         grid-row: 1 / 5;
         padding-left: 2rem;
-    }
-
-    @include respond-min($bp-x-large) {
-        padding-left: 4rem;
     }
 
     h1 {

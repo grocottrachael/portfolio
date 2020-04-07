@@ -31,12 +31,20 @@
 
     @include respond-min($bp-x-large) {
         grid-column: 3 /11;
-        padding: 4rem;
-        padding-right: 8rem;
     }
 
     p {
         margin-bottom: 1.5rem;
+        font-size: calc(16px + 10* ((100vw - 320px) / 800));
+        line-height: 1.5;
+
+
+    @include respond-min($bp-large) {
+        font-size: calc(8px + 8* ((100vw - 320px) / 800));
+    }
+    @include respond-min($bp-x-large) {
+        font-size: calc(8px + 6* ((100vw - 320px) / 800));
+    }
     }
 
     a {
