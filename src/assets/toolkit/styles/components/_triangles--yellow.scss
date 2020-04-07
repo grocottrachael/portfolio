@@ -25,4 +25,18 @@
         grid-column: 1 / 4;
         grid-row: 17 / 21;
     }
+
+    .text-positioner {
+        @include respond-min($bp-medium) {
+            display: none;
+        }
+    }
+
+    .triangle-row {
+        display: none;
+        
+        @include respond-min($bp-medium) {
+            display: flex;
+        }
+    }
 }
