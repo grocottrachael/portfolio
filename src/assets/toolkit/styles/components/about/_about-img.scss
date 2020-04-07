@@ -1,0 +1,41 @@
+.about-img {
+    grid-column: 1 / 17;
+    grid-row: 12 / 25;
+    position: relative;
+    // font-size: 77px;
+    text-align: left;
+    display: flex;
+
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+
+    @include respond-min($bp-medium) {
+        grid-column: 12 / 17;
+        grid-row: 4 / 12;
+    }
+
+    @include respond-min($bp-large) {
+        grid-column: 13 /17;
+        grid-row: 1 / 12;
+    }
+
+    @include respond-min($bp-x-large) {
+        grid-column: 11 /17;
+        grid-row: 1 / 23;
+    }
+
+    
+
+
+    img {
+        object-fit: cover;
+    }
+}

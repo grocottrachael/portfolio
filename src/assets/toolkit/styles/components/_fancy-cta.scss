@@ -1,0 +1,15 @@
+.fancy-cta {
+
+    background: linear-gradient(to right, $c-black 0%, $c-black 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-y;
+    background-size: 0px 0px;
+    text-decoration: none;
+    transition: background-size 0.2s;
+    color: $c-black;
+
+
+&:hover {
+    background-size: 100% 100%;
+}
+}

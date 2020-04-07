@@ -1,0 +1,17 @@
+
+.t {
+    grid-column: 1 / 4;
+    grid-row: 1 / 5;
+    background-color: blue;
+    text-align: center;
+    position: relative;
+    font-size: 30vw;
+    font-variation-settings: 'STYL' 0, 'wght' 350, 'AWKD' 0, 'wdth' 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.t-sizing {
+    font-size: 30vw;
+}

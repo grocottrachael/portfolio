@@ -1,0 +1,22 @@
+.yellow-footer {
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 17;
+        grid-row: 23 / 25;
+        position: relative;
+        background-color: $c-yellow;
+        &:after {
+            position: absolute;
+            border: 10px solid black;
+            left: -10px;
+            right: -10px;
+            top: -10px;
+            bottom: -10px;
+            content: '';
+        }
+    }
+
+    @include respond-min($bp-large) {
+        grid-column: 1 / 7;
+        grid-row: 23 / 25;
+    }
+}

@@ -19,55 +19,65 @@ $fs-4: ($base-font-size * ($modular-scale * 1));
 
 $fs-5: ($base-font-size * ($modular-scale * 0.8));
 
-$ff-sans: 'silkablack';
+$ff-sans: 'silka';
 
 $ff-serif: 'silkablack';
 
 html,
 body,
 p {
-    font-family: 'silkablack';
-    font-size: calc(32px + 20 * ((100vw - 320px) / 800));
-    line-height: $base-line-height / $base-font-size;
-    // text-align: left;
-    @include respond-min($bp-medium) {
-        font-size: calc(36px + 24 * ((100vw - 320px) / 800));
-    }
+    font-family: 'silka';
+    font-weight: 400;
 
-    @media screen and (max-height: 655px) {
-        font-size: calc(32px + 20 * ((100vw - 320px) / 800));
-    }
 }
 
 h1,
 .h1 {
-    font-size: $fs-2;
+    font-size: calc(42px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
-    font-weight: 400;
+    font-weight: 800;
 
     @include respond-min($bp-medium) {
-        font-size: $fs-1;
+        font-size: calc(36px + 24 * ((100vw - 320px) / 800));
+    }
+
+    @include respond-min($bp-x-large) {
+        font-size: calc(36px + 24*((100vw - 320px)/800));    
     }
 }
 
 h2,
 .h2 {
-    font-size: $fs-3;
+    font-size: calc(18px + 18*((100vw - 320px)/800));
     color: $c-black;
+    position: relative;
+    font-weight: 800;
+    padding-bottom: 1rem;
+
 
     @include respond-min($bp-medium) {
-        font-size: $fs-2;
+        font-size: calc(18px + 18*((100vw - 320px) / 800));
+    }
+
+    @include respond-min($bp-x-large) {
+        font-size: calc(20px + 20*((100vw - 320px)/800));    
     }
 }
 
 h3,
 .h3 {
-    font-size: $fs-4;
+    font-size: calc(20px + 20*((100vw - 320px)/800));
+    color: $c-black;
+    position: relative;
+    font-weight: 800;
+    padding-bottom: 1rem;
+
 
     @include respond-min($bp-medium) {
-        font-size: $fs-3;
+        font-size: calc(12px + 12* ((100vw - 320px) / 800));
     }
+
 }
 
 h4,

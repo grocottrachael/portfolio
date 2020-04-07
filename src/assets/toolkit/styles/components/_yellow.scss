@@ -23,6 +23,18 @@
         grid-column: 10 / 13;
         grid-row: 5 / 9;
     }
+
+    .text-positioner {
+        display: none;
+
+        @include respond-min($bp-medium) {
+            display: flex;
+        }
+    }
+
+    h1:hover {
+        color: $c-yellow;
+    }
 }
 
 .social--yellow {

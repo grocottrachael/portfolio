@@ -9,7 +9,7 @@
     text-transform: uppercase;
 }
 
-p,
+h1,
 img {
     display: table-cell;
     vertical-align: middle;
@@ -30,9 +30,15 @@ img {
         width: 100%;
     }
 
-    p,
+    h1,
     img {
         display: table-cell;
         vertical-align: middle;
     }
+}
+
+.text-positioner--left {
+    align-items: center;
+    justify-content: left;
+    text-transform: uppercase;
 }

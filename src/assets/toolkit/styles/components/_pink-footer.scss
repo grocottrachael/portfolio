@@ -1,0 +1,65 @@
+.pink-footer {
+
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 17;
+        grid-row: 23 / 25;
+        position: relative;
+        background-color: $c-pink;
+        &:after {
+            position: absolute;
+            border: 10px solid black;
+            left: -10px;
+            right: -10px;
+            top: -10px;
+            bottom: -10px;
+            content: '';
+        }
+    }
+
+    @include respond-min($bp-large) {
+        grid-column: 7 / 17;
+        grid-row: 23 / 25;
+    }
+
+    .social--pink {
+        display: none;
+    
+        @include respond-min($bp-medium) {
+            font-size: calc(12px + 12* ((100vw - 320px) / 800));
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            flex-direction: row;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+            justify-content: space-around;
+    
+            li {
+                padding: 10px;
+            }
+
+            h3 {
+                padding-bottom: 0;
+            }
+    
+    
+            a:hover {
+                color: $c-pink;
+            }
+        }
+    
+    
+        @include respond-min($bp-x-large) {
+            font-size: calc(24px + 16 * ((100vw - 320px) / 800));
+        }
+
+        .fancy-cta {
+            &:hover {
+                color: $c-pink;
+            }
+        }
+    }
+}
