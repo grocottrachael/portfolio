@@ -1,10 +1,9 @@
-.about-img {
+.pd-most-recent-img {
+    background-color: $c-yellow;
     grid-column: 1 / 17;
-    grid-row: 12 / 25;
+    grid-row: 3 / 5;
+    padding: 2rem;
     position: relative;
-    // font-size: 77px;
-    text-align: left;
-    display: flex;
 
 
     &:after {
@@ -18,22 +17,7 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 12 /17;
-        grid-row: 2 / 19;
-    }
-
-    @include respond-min($bp-large) {
         grid-column: 1 / 9;
-        grid-row: 3 / 19;
-
-    }
-
- 
-
-    
-
-
-    img {
-        object-fit: cover;
+        grid-row: 3 / 5;
     }
 }

@@ -24,13 +24,13 @@
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 /9;
+        grid-column: 9 /17;
         grid-row: 3 / 19;
         padding: 2rem;
     }
 
     @include respond-min($bp-x-large) {
-        grid-column: 1 /9;
+        grid-column: 9 / 17;
     }
 
     p {

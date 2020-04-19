@@ -1,0 +1,30 @@
+.pd-white-angle-stripe {
+    grid-column: 1 / 17;
+    grid-row: 8 / 9;
+    position: relative;
+    background-color: $c-white;
+    background: repeating-linear-gradient(
+        -54deg,
+        #000,
+        #000 20px,
+        $c-white 20px,
+        $c-white 52px
+    );
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 17;
+        grid-row: 5 / 6;
+    }
+
+
+}
