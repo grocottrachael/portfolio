@@ -18,12 +18,14 @@
     }
 
     @include respond-min($bp-medium) {
-        grid-column: 9 /17;
-        grid-row: 5 / 23;
+        grid-column: 12 /17;
+        grid-row: 2 / 19;
     }
 
     @include respond-min($bp-large) {
         grid-column: 9 /17;
+        grid-row: 3 / 19;
+
     }
 
  

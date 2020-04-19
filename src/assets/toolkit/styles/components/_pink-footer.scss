@@ -1,10 +1,12 @@
 .pink-footer {
+    display: none;
 
     @include respond-min($bp-medium) {
         grid-column: 9 / 17;
-        grid-row: 23 / 25;
+        grid-row: 19 / 21;
         position: relative;
         background-color: $c-pink;
+        display: block;
         &:after {
             position: absolute;
             border: 10px solid black;
@@ -18,7 +20,7 @@
 
     @include respond-min($bp-large) {
         grid-column: 9 / 17;
-        grid-row: 23 / 25;
+        grid-row: 19 / 21;
     }
 
     .social--pink {
