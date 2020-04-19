@@ -1,7 +1,7 @@
 .pink-footer {
 
     @include respond-min($bp-medium) {
-        grid-column: 1 / 17;
+        grid-column: 9 / 17;
         grid-row: 23 / 25;
         position: relative;
         background-color: $c-pink;
@@ -17,7 +17,7 @@
     }
 
     @include respond-min($bp-large) {
-        grid-column: 7 / 17;
+        grid-column: 9 / 17;
         grid-row: 23 / 25;
     }
 

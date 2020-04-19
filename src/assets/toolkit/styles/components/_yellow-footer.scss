@@ -1,6 +1,6 @@
 .yellow-footer {
     @include respond-min($bp-medium) {
-        grid-column: 1 / 17;
+        grid-column: 1 / 9;
         grid-row: 23 / 25;
         position: relative;
         background-color: $c-yellow;
@@ -16,7 +16,7 @@
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 7;
+        grid-column: 1 / 9;
         grid-row: 23 / 25;
     }
 }
