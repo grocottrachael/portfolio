@@ -33,7 +33,7 @@ p {
 
 h1,
 .h1 {
-    font-size: calc(42px + 20*((100vw - 320px)/800));
+    font-size: calc(32px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -51,7 +51,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: calc(32px + 20*((100vw - 320px)/800));
+    font-size: calc(18px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
     font-weight: 800;
