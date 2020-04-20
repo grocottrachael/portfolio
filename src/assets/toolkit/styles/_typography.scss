@@ -49,7 +49,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: calc(18px + 18*((100vw - 320px)/800));
+    font-size: calc(32px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -57,7 +57,7 @@ h2,
 
 
     @include respond-min($bp-medium) {
-        font-size: calc(18px + 18*((100vw - 320px) / 800));
+        font-size: calc(36px + 18*((100vw - 320px) / 800));
     }
 
     @include respond-min($bp-x-large) {

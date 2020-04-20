@@ -22,10 +22,16 @@ $angle-o: 4px;
     color: $c-black;
     letter-spacing: 1px;
     font-weight: 900;
-    font-size: calc(8px + 8 * ((100vw - 320px) / 800));
+    font-size: 20px;
     box-shadow: 8px 8px 0 $c-black;
     text-decoration: none;
     cursor: pointer;
+
+    @include respond-min($bp-medium) {
+        font-size: calc(8px + 8 * ((100vw - 320px) / 800));
+
+    }
+
     
     &:hover {
         top: 4px;
@@ -73,7 +79,7 @@ $angle-o: 4px;
       transform: rotate(45deg);
       z-index: -1;
     }
-    
+
     &:active.btn {
         top: 8px;
         left: 8px;

@@ -1,10 +1,11 @@
 .pd-most-recent-img {
     background-color: $c-yellow;
     grid-column: 1 / 17;
-    grid-row: 3 / 5;
+    grid-row: 3 / 4;
     padding: 1rem;
     position: relative;
-
+    display: flex;
+    align-items: center;
 
     &:after {
         position: absolute;
