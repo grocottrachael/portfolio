@@ -20,6 +20,10 @@
         content: '';
     }
 
+    h1:hover {
+        color: $c-pink;
+    }
+
     @include respond-min($bp-medium) {
         grid-column: 8 / 10;
         grid-row: 4 / 19;

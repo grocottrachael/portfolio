@@ -20,7 +20,7 @@
 
     @include respond-min($bp-medium) {
         grid-column: 1 /12;
-        grid-row: 2 / 19;
+        grid-row: 3 / 19;
     }
 
     @include respond-min($bp-large) {

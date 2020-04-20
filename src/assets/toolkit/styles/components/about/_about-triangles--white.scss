@@ -3,7 +3,7 @@
 
     @include respond-min($bp-medium) {
         grid-column: 12 / 17;
-        grid-row: 1 / 2;
+        grid-row: 1 / 3;
         display: flex;
         position: relative;
         background-color: $c-white;

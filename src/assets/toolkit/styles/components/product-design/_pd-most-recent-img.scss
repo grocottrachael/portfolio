@@ -2,7 +2,7 @@
     background-color: $c-yellow;
     grid-column: 1 / 17;
     grid-row: 3 / 5;
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
 
 
@@ -19,5 +19,7 @@
     @include respond-min($bp-medium) {
         grid-column: 1 / 9;
         grid-row: 3 / 5;
+        padding: 2rem;
+
     }
 }

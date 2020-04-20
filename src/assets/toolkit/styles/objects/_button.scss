@@ -5,36 +5,111 @@
  */
 
 $button-background: $c-mint;
-$button-border: 4px solid $c-black;
+$button-border: 5px solid $c-black;
+$angle: 8px;
+$angle-o: 4px;
 
 .btn {
-    cursor: pointer;
-    background: $button-background;
-    border: $button-border;
+    top: 0;
+    left: 0;
+    transition: all .15s linear 0s;
+    position: relative;
     display: inline-block;
-    font: inherit;
-    overflow: visible;
-    text-align: center;
-    vertical-align: middle;
+    padding: 15px 25px;
+    background-color: $c-mint;
+    border: 5px solid $c-black;
     text-transform: uppercase;
     color: $c-black;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 40px;
-    transition: all 0.3s;
-    padding: 1rem;
-
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-        text-decoration: none;
-    }
-
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: calc(8px + 8 * ((100vw - 320px) / 800));
+    box-shadow: 8px 8px 0 $c-black;
+    text-decoration: none;
+    cursor: pointer;
+    
     &:hover {
-        background: rgb(198, 198, 198);
-        transition: all 0.3s;
+        top: 4px;
+        left: 4px;
+        box-shadow: 4px 4px 0 #161616;
+      
+      &::after {
+        top: 1px;
+        left: -2px;
+        width: $angle-o;
+        height: $angle-o;
+      }
+      
+      &::before {
+        bottom: -2px;
+        right: 1px;
+        width: $angle-o;
+        height: $angle-o;
+      }
     }
+    
+    &::after {
+      transition: all .15s linear 0s;
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      width: $angle;
+      height: $angle;
+      background-color: $c-black;
+      transform: rotate(45deg);
+      z-index: -1;
+      
+    }
+    
+    &::before {
+      transition: all .15s linear 0s;
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      right: 4px;
+      width: $angle;
+      height: $angle;
+      background-color: $c-black;
+      transform: rotate(45deg);
+      z-index: -1;
+    }
+    
+    &:active.btn {
+        top: 8px;
+        left: 8px;
+        box-shadow: none;
+        
+        &:before {
+          bottom: 1px;
+          right: 1px;
+        }
+        
+        &:after {
+          top: 1px;
+          left: 1px;
+        }
+      }
+  }
+  
+  a.btn { position: relative; }
+  
+
+
+//     &,
+//     &:hover,
+//     &:active,
+//     &:focus {
+//         text-decoration: none;
+//     }
+
+//     &:hover {
+//         background: rgb(198, 198, 198);
+//         transition: all 0.3s;
+//     }
+// }
+
+.btn-container {
+    z-index: 99;
 }
 
 /**

@@ -25,7 +25,6 @@ img {
     text-transform: uppercase;
 
     @include respond-min($bp-large) {
-        display: table;
         height: 100%;
         width: 100%;
     }

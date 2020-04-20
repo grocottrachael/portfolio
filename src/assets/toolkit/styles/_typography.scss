@@ -43,7 +43,7 @@ h1,
     }
 
     @include respond-min($bp-x-large) {
-        font-size: calc(36px + 24*((100vw - 320px)/800));    
+        font-size: calc(36px + 20*((100vw - 320px)/800));    
     }
 }
 
