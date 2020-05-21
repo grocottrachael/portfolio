@@ -22,7 +22,7 @@
     }
 }
 
-.pd-project__img--lm {
+.pd-project__img--red {
 
     grid-column: 1 / 17;
     grid-row: 9 / 10;
@@ -30,6 +30,30 @@
     @include respond-min($bp-medium) {
         grid-column: 1 / 9;
         grid-row: 6 / 8;
+
+    }
+}
+
+.pd-project__img--planet {
+
+    grid-column: 1 / 17;
+    grid-row: 15 / 16;
+
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 9;
+        grid-row: 9 / 11;
+
+    }
+}
+
+.pd-project__img--lm {
+
+    grid-column: 1 / 17;
+    grid-row: 20 / 21;
+
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 9;
+        grid-row: 12 / 14;
 
     }
 }
@@ -73,7 +97,7 @@
     }
 }
 
-.pd-project__info--lm {
+.pd-project__info--red {
 
     grid-column: 1 / 17;
     grid-row: 10 / 14;
@@ -81,6 +105,31 @@
     @include respond-min($bp-medium) {
         grid-column: 9 / 17;
         grid-row: 6 / 8;
+
+    }
+}
+
+.pd-project__info--planet {
+
+    grid-column: 1 / 17;
+    grid-row: 16 / 19;
+
+    @include respond-min($bp-medium) {
+        grid-column: 9 / 17;
+        grid-row: 9 / 11;
+
+    }
+}
+
+
+.pd-project__info--lm {
+
+    grid-column: 1 / 17;
+    grid-row: 21 / 22;
+
+    @include respond-min($bp-medium) {
+        grid-column: 9 / 17;
+        grid-row: 12 / 14;
 
     }
 }

@@ -25,6 +25,22 @@
         grid-column: 1 / 17;
         grid-row: 5 / 6;
     }
+}
+
+.pd-white-angle-stripe--reversed {
+    grid-column: 1 / 17;
+    grid-row: 19 / 20;
+    background: repeating-linear-gradient(
+        54deg,
+        #000,
+        #000 20px,
+        $c-white 20px,
+        $c-white 52px
+    );
 
 
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 17;
+        grid-row: 11 / 12;
+    }
 }

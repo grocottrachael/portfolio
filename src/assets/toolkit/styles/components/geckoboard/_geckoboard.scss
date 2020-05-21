@@ -1,4 +1,4 @@
-.product-design {
+.geckoboard {
     border: 10px solid $c-black;
     background-color: $c-white;
     width: 100vw;
@@ -16,11 +16,5 @@
         grid-auto-rows: minmax(50px, auto);
         }
 
-        .yellow-footer, .pink-footer {
-
-            @include respond-min($bp-medium) {
-            grid-row: 14 / 16;
-            }
-        }
 
 }

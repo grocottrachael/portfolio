@@ -1,0 +1,108 @@
+.project__divider {
+
+    position: relative;
+    width: 120%;
+    margin: -1.5rem;
+    height:50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+
+    @include respond-min($bp-medium) {
+        margin: 3rem 1.5rem 3rem -1.5rem;;
+
+    }
+
+    @include respond-min($bp-large) {
+        margin: 3rem -2rem 3rem -2rem;
+        width: 111%;
+    }
+
+    @include respond-min(1430px) {
+        margin: 3rem -2rem 3rem -3rem;
+        width: 110%;
+
+    }
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+
+    // @include respond-min($bp-medium) {
+    //     grid-column: 1 / 17;
+    //     grid-row: 8 / 9;
+    // }
+}
+
+.project__divider--circle {
+    // grid-row: 8 / 9;
+
+    // @include respond-min($bp-medium) {
+    //     grid-column: 1 / 17;
+    //     grid-row: 8 / 9;
+    // }
+
+}
+
+.pd-circle-stripe__bg {
+    background-image: url("/assets/toolkit/images/circle-padded.png");
+    background-repeat: space;
+    background-position: 50% 50%;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.project-divider--angle-stripe {
+    width: 100%;
+    height: 100%;
+        position: relative;
+    background-color: $c-white;
+    background: repeating-linear-gradient(
+        -54deg,
+        #000,
+        #000 20px,
+        $c-white 20px,
+        $c-white 52px
+    );
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+}
+
+.project-divider--angle-stripe2 {
+    width: 100%;
+    height: 100%;
+        position: relative;
+    background-color: $c-white;
+    background: repeating-linear-gradient(
+        54deg,
+        #000,
+        #000 20px,
+        $c-white 20px,
+        $c-white 52px
+    );
+
+    &:after {
+        position: absolute;
+        border: 10px solid black;
+        left: -10px;
+        right: -10px;
+        top: -10px;
+        bottom: -10px;
+        content: '';
+    }
+}

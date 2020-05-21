@@ -28,6 +28,16 @@ body,
 p {
     font-family: 'silkamedium';
     font-weight: 400;
+    font-size: calc(16px + 14*((100vw - 320px)/800));
+
+    @include respond-min($bp-medium) {
+        font-size: calc(14px + 6*((100vw - 320px)/800));
+    }
+
+    @include respond-min($bp-x-large) {
+        font-size: calc(12px + 6*((100vw - 320px)/800));
+    }
+
 
 }
 
@@ -51,7 +61,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: calc(18px + 20*((100vw - 320px)/800));
+    font-size: calc(30px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -70,7 +80,7 @@ h2,
 
 h3,
 .h3 {
-    font-size: calc(20px + 20*((100vw - 320px)/800));
+    font-size: calc(24px + 20*((100vw - 320px)/800));
     color: $c-black;
     position: relative;
     font-weight: 800;
