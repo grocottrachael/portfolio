@@ -1,56 +1,48 @@
 .about-content {
-
-    grid-column: 1 / 17;
-    grid-row: 3 / 12;
-    position: relative;
-    // font-size: 77px;
-    text-align: left;
-    padding: 1rem;
-
-
-    &:after {
-        position: absolute;
-        border: 10px solid black;
-        left: -10px;
-        right: -10px;
-        top: -10px;
-        bottom: -10px;
-        content: '';
-    }
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column-reverse;
 
     @include respond-min($bp-medium) {
-        grid-column: 1 /12;
-        grid-row: 3 / 19;
+        flex-direction: row;
+        min-height:85vh;
+
     }
 
     @include respond-min($bp-large) {
-        grid-column: 9 /17;
-        grid-row: 3 / 19;
-        padding: 2rem;
+        min-height:85vh;
+
     }
 
-    @include respond-min($bp-x-large) {
-        grid-column: 9 / 17;
+}
+
+.about-content--left {
+    background: $c-coral;
+    display: flex;
+    flex: 0 0 50%;
+    justify-content: center;
+    position: relative;
+    align-content: center;
+
+}
+
+.about-content--right {
+    background: $c-lilac;
+    flex: 0 0 50%;   
+    padding:1rem;
+
+
+    @include respond-min($bp-large) {
+        padding:2rem;
+
+    }
+
+    h3 {
+        margin-top: 1rem;
     }
 
     p {
-        margin-bottom: 1.5rem;
-        font-size: calc(16px + 10* ((100vw - 320px) / 800));
-        line-height: 1.5;
-
-
-    @include respond-min($bp-large) {
-        font-size: calc(8px + 8* ((100vw - 320px) / 800));
+        padding-bottom: .75rem;;
     }
-    @include respond-min($bp-x-large) {
-        font-size: calc(8px + 6* ((100vw - 320px) / 800));
-    }
-    }
-
-    a {
-        position: relative;
-        z-index: 999;;
-    }
-
 
 }

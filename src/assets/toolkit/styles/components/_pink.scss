@@ -6,7 +6,7 @@
         grid-column: 6 / 13;
         grid-row: 22 / 25;
         position: relative;
-        background-color: $c-pink;
+        background-color: $c-coral;
         &:after {
             position: absolute;
             border: 10px solid black;
@@ -65,7 +65,7 @@
 
 
     a:hover {
-        color: $c-pink;
+        color: $c-coral;
     }
 }
 

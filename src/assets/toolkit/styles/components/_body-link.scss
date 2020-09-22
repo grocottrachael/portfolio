@@ -6,6 +6,16 @@
     text-decoration: none;
     transition: background-size 0.2s;
     color: $c-black;
+    font-weight: 600;
+
+    &:hover {
+        background-size: 100% 100%;
+    }
+}
+
+.body-link--no-underline {
+
+    background-size: 0px 2px;
 
 
     &:hover {

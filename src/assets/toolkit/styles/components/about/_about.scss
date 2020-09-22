@@ -1,20 +1,4 @@
 .about {
-    border: 10px solid $c-black;
+    border: 10px solid $c-white;
     background-color: $c-white;
-    width: 100vw;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
-    border-bottom: 0;
-
-
-
-    @media screen and (max-height: 1200px) {
-        grid-auto-rows: minmax(50px, auto);
-        }
-
-
 }

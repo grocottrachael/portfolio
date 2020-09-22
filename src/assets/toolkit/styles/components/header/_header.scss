@@ -1,0 +1,23 @@
+.header{
+   display: flex;
+   flex-direction: row; 
+   text-transform: uppercase;
+}
+
+.header-logo {
+    background-color: $c-lilac;
+    margin-right: 10px;
+    flex:1;
+    padding:1rem;
+    background-image: url("/assets/toolkit/images/back.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.header-page-title {
+    background-color: $c-mint;
+    flex:9;
+    padding:1rem
+
+}

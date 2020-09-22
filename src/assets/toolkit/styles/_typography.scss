@@ -35,8 +35,7 @@ p {
     }
 
     @include respond-min($bp-x-large) {
-        font-size: calc(12px + 6*((100vw - 320px)/800));
-    }
+        font-size: calc(13px + 4*((100vw - 320px)/800));    }
 
 
 }
@@ -55,7 +54,7 @@ h1,
     }
 
     @include respond-min($bp-x-large) {
-        font-size: calc(36px + 20*((100vw - 320px)/800));    
+        font-size: calc(36px + 45*((100vw - 320px)/800));    
     }
 }
 

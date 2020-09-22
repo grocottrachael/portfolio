@@ -1,39 +1,32 @@
 .about-img {
-    grid-column: 1 / 17;
-    grid-row: 12 / 25;
-    position: relative;
-    // font-size: 77px;
-    text-align: left;
-    display: flex;
+padding:2rem;
+align-self: center;
+    @include respond-min($bp-medium) {
+        padding:4rem;
 
-
-    &:after {
-        position: absolute;
-        border: 10px solid black;
-        left: -10px;
-        right: -10px;
-        top: -10px;
-        bottom: -10px;
-        content: '';
     }
+}
+
+.about-img--corner {
+    position: absolute;
+    right:0%;
+    bottom:5%;
+    width: 30%;
+
 
     @include respond-min($bp-medium) {
-        grid-column: 12 /17;
-        grid-row: 3 / 19;
+        width: 30%;
+        bottom: 25%;
+        right:5%
     }
 
     @include respond-min($bp-large) {
-        grid-column: 1 / 9;
-        grid-row: 3 / 19;
-
+        right:10%;
+        bottom:15%;
     }
 
- 
-
-    
-
-
-    img {
-        object-fit: cover;
+    @include respond-min($bp-x-large) {
+        right:10%;
+        bottom:10%;
     }
 }

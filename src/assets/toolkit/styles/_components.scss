@@ -4,26 +4,21 @@
 
 @import 'components/body';
 @import 'components/name';
-@import 'components/text-positioner';
 @import 'components/triangles--white';
 @import 'components/triangle-row';
 @import 'components/verticle-stripe';
-@import 'components/job-title';
-@import 'components/mint-stripe';
-@import 'components/yellow';
-@import 'components/circles--white';
-@import 'components/circle-position';
 @import 'components/white-angle-stripe';
 @import 'components/triangles--yellow';
 @import 'components/side-hustle';
-@import 'components/mint';
-@import 'components/horizontal-stripe';
 @import 'components/pink';
-@import 'components/pink-footer';
-@import 'components/yellow-footer';
 @import 'components/fancy-cta';
 @import 'components/body-link';
 @import 'components/logo';
+
+@import 'components/header/header';
+
+@import 'components/home/home';
+@import 'components/home/grid-container';
 
 
 
@@ -32,7 +27,6 @@
 @import 'components/about/about-content';
 @import 'components/about/about-img';
 @import 'components/about/about-page-title';
-@import 'components/about/about-triangles--white';
 
 @import 'components/product-design/product-design';
 @import 'components/product-design/pd-page-title';

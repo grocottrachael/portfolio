@@ -1,0 +1,103 @@
+.home {
+    border: 10px solid $c-white;
+    background-color: $c-white;
+
+}
+
+.home-header {
+    position: relative;
+    text-transform: uppercase;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-bottom: 0;
+    height: 99.5vh;
+    width: 95vw;
+    @include respond-min($bp-medium) {
+        width:99vw;
+
+    }
+}
+
+// .home-header_row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     height: 33vh; 
+
+
+//     @include respond-min($bp-large) {
+//         height: 49.75vh; 
+
+//     }
+
+// }
+
+.home-header_text {
+    position: absolute;
+    top: 23%;
+    left: 10vw;
+
+    @include respond-min($bp-medium) {
+        top: 33%;
+
+    }
+
+    h3 {
+        @include respond-min($bp-medium) {
+            font-size: calc(12px + 20* ((100vw - 320px) / 800));
+            padding-bottom: 0;
+        }
+    }
+}
+
+.home-body {
+    position: relative;
+    text-transform: uppercase;
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border-bottom: 0;
+    height: 99.5vh;
+    width: 95vw;
+    @include respond-min($bp-medium) {
+        width:99vw;
+
+    }
+}
+
+.home-cta {
+    font-weight: 800;
+    position: relative;
+    padding-top:1rem;
+    display: flex;
+    transition: all .15s ease-out;
+
+    &:hover {
+
+                
+        .home-cta-arrow {
+            transform: translateX(5px);
+            transition: all .15s ease-out;
+        }
+        
+        .home-cta-arrow--2 {
+            transform: translateX(10px);
+            transition: all .15s ease-out;
+        }
+    }
+}
+
+
+.home-cta-arrow {
+padding: 0 10px;
+transition: all .15s ease-out;
+
+}
+
+.home-cta-arrow--2 {
+    transition: all .15s ease-out;
+
+
+}

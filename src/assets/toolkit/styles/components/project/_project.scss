@@ -238,7 +238,7 @@
         right: 0;
         border-width: 20px 20px 30px 30px;
         border-style: solid;
-        border-color: $c-yellow #fff #fff $c-yellow;
+        border-color: $c-lilac #fff #fff $c-lilac;
         /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2); */
         display: block;
         width: 0;
@@ -357,7 +357,7 @@
     width: 100%;
     z-index: 99;
     position: relative;
-    background-color: $c-yellow;
+    background-color: $c-lilac;
 
     &:before {
         content: "";
