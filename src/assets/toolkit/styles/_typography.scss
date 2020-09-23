@@ -53,9 +53,7 @@ h1,
         font-size: calc(36px + 24 * ((100vw - 320px) / 800));
     }
 
-    @include respond-min($bp-x-large) {
-        font-size: calc(36px + 45*((100vw - 320px)/800));    
-    }
+
 }
 
 h2,

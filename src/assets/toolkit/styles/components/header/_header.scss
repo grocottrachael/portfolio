@@ -12,7 +12,18 @@
     background-image: url("/assets/toolkit/images/back.svg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: cover;
+    transition: all .15s ease-out;
+    display: flex;
+    align-content: center;
+
+
+    &:hover {
+        background-color: $c-coral;
+        transition: all .15s ease-out;
+
+
+    }
 }
 
 .header-page-title {
