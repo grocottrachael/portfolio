@@ -121,18 +121,23 @@
 .pd-project--red {
     background-color: $c-yellow;
     margin-bottom: 5px;
+    justify-content: center;
 
     @include respond-min($bp-medium) {
         margin-right: 5px;
+        justify-content: flex-start;
+
     }
 }
 
 .pd-project--lm {
     background-color: $c-green;
     margin-top: 5px;
+    justify-content: center;
 
     @include respond-min($bp-medium) {
         margin-left: 5px;
         margin-top: 0;
+        justify-content: flex-start;
     }
 }
