@@ -324,7 +324,10 @@
 .grid-container--11 {
 
     background-color: $c-grey;
-
+    background-image: url("/assets/toolkit/images/home/pattern11.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-column: 1 / 1;
     grid-row: 4 / 5;
 
