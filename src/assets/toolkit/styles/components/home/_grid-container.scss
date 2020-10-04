@@ -10,13 +10,10 @@
 
 .grid-container--1 {
 
-    // background: url("/assets/toolkit/images/home/pattern1.svg");
     grid-column: 1 / 4;
     grid-row: 1 / 3;
     background-color: $c-grey;
-    // background-repeat: no-repeat;
-    // background-size: contain;
-    // background-position: top;
+
 
     &:before {
         content: "";
@@ -37,7 +34,7 @@
     }
 
     @include respond-min($bp-large) {
-        background: url("/assets/toolkit/images/home/pattern1.svg");
+        // background: url("/assets/toolkit/images/home/pattern1.svg");
         background-color: $c-grey;
 
         background-repeat: no-repeat;
@@ -54,13 +51,24 @@
 
 .grid-container--2 {
 
-    background-image: url("/assets/toolkit/images/home/pattern2.svg");
     background-color: $c-pink;
     background-repeat: space;
     grid-column: 4 / 7;
     grid-row: 1 / 3;
     background-size: cover;
     background-position: center;
+
+    &:before {
+        content: "";
+        background: url("/assets/toolkit/images/home/pattern2.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
     @include respond-min($bp-large) {
         grid-column: 3 / 5;
@@ -76,14 +84,24 @@
 
 .grid-container--3 {
 
-    background: url("/assets/toolkit/images/home/pattern3.svg");
     background-color: $c-green;
-    background-repeat: none;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 4 / 7;
     grid-row: 5 / 7;
+
+    &:before {
+        content: "";
+        background: url("/assets/toolkit/images/home/pattern3.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
     @include respond-min($bp-large) {
         grid-column: 5 / 7;
@@ -95,12 +113,21 @@
 
 .grid-container--4 {
 
-    background-image: url("/assets/toolkit/images/home/pattern4.svg");
     background-color: $c-pink;
-    background-position: center;
     grid-column: 1 / 4;
     grid-row: 5 / 7;
-    background-size: contain;
+
+    &:before {
+        content: "";
+        background: url("/assets/toolkit/images/home/pattern4.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
  
     @include respond-min($bp-large) {
@@ -275,12 +302,24 @@
 
 .grid-container--6 {
 
-    background-image: url("/assets/toolkit/images/home/pattern6.svg");
     background-color: $c-grey;
     background-position: bottom;
     background-size: contain;
     grid-column: 4 / 7;
     grid-row: 3 / 5;
+
+
+    &:before {
+        content: "";
+        background: url("/assets/toolkit/images/home/pattern6.svg");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
     @include respond-min($bp-medium) {
 
@@ -385,7 +424,22 @@
     background-position: center;
     grid-column: 1 / 1;
     grid-row: 4 / 5;
-    background-image: url("/assets/toolkit/images/home/pattern11.svg");
+    position: relative;
+    padding: 0;
+    // background-image: url("/assets/toolkit/images/home/pattern11.svg");
+
+    &:before {
+        content: "";
+        position: absolute;
+        background: url("/assets/toolkit/images/home/pattern11.svg");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
 
     @include respond-min($bp-medium) {
         grid-column: 4 / 7;
