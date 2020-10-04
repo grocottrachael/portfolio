@@ -121,9 +121,22 @@
 
         min-height: 375px;
 
+        padding: 3rem 2rem;
+
         @include respond-min($bp-medium) {
             min-height: auto;
-
+            padding: 1rem;
+    
+        }
+    
+        @include respond-min($bp-large) {
+            padding: 1.5rem;
+    
+        }
+    
+        @include respond-min($bp-x-large) {
+            padding: 2rem;
+    
         }
     }
 
