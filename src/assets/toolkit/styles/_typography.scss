@@ -28,21 +28,12 @@ body,
 p {
     font-family: 'silkamedium';
     font-weight: 400;
-    font-size: calc(16px + 14*((100vw - 320px)/800));
-
-    @include respond-min($bp-medium) {
-        font-size: calc(14px + 6*((100vw - 320px)/800));
-    }
-
-    @include respond-min($bp-x-large) {
-        font-size: calc(13px + 4*((100vw - 320px)/800));    }
-
-
+    font-size: 20px;
 }
 
 h1,
 .h1 {
-    font-size: calc(32px + 20*((100vw - 320px)/800));
+    font-size: 32px;
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -50,7 +41,7 @@ h1,
 
 
     @include respond-min($bp-medium) {
-        font-size: calc(36px + 24 * ((100vw - 320px) / 800));
+        font-size: 44px;
     }
 
 
@@ -58,7 +49,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: calc(30px + 20*((100vw - 320px)/800));
+    font-size: 28px;
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -67,17 +58,15 @@ h2,
 
 
     @include respond-min($bp-medium) {
-        font-size: calc(36px + 18*((100vw - 320px) / 800));
+        font-size: 32px;
     }
 
-    @include respond-min($bp-x-large) {
-        font-size: calc(20px + 20*((100vw - 320px)/800));    
-    }
+
 }
 
 h3,
 .h3 {
-    font-size: calc(24px + 20*((100vw - 320px)/800));
+    font-size: 24px;
     color: $c-black;
     position: relative;
     font-weight: 800;
@@ -85,9 +74,9 @@ h3,
     font-family: 'silkablack';
 
 
-    @include respond-min($bp-medium) {
-        font-size: calc(12px + 12* ((100vw - 320px) / 800));
-    }
+    // @include respond-min($bp-medium) {
+    //     font-size: calc(12px + 12* ((100vw - 320px) / 800));
+    // }
 
 }
 

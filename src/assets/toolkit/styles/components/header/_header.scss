@@ -1,34 +1,160 @@
 .header{
-   display: flex;
-   flex-direction: row; 
-   text-transform: uppercase;
+    background: $c-grey;
+
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row; 
+    text-transform: uppercase;
+    background: $c-grey;
+    padding: .75rem;
+     font-size: 32px;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-family: 'silkabold';
+     align-items: center;
+     justify-content: space-between;
 }
 
 .header-logo {
-    background-color: $c-lilac;
     margin-right: 10px;
-    flex:1;
-    padding:1rem;
-    background-image: url("/assets/toolkit/images/back.svg");
+    background-image: url("/assets/toolkit/images/logo-bg.svg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    transition: all .15s ease-out;
+    background-size: contain;
+    transition: all .15s ease-in-out;
     display: flex;
     align-content: center;
+    padding: 1rem;
 
+    span {
+        margin-left: -4px;
+    }
+    &:hover {
+        background-image: url("/assets/toolkit/images/logo-bg--hover.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all .15s ease-in-out;
+    }
+}
+
+.header-nav {
+    // padding: .75rem
+
+}
+
+.header-nav_hamburger {
+    margin-right: 10px;
+    flex: 1;
+    background-image: url("/assets/toolkit/images/hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .15s ease-in-out;
+    display: flex;
+    align-content: center;
+    padding: 1.25rem;
+    border: none;
+    background-color: $c-grey;
 
     &:hover {
-        background-color: $c-coral;
-        transition: all .15s ease-out;
+        background-image: url("/assets/toolkit/images/hamburger-hover.svg");
+        margin-right: 10px;
+        flex: 1;
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: all .15s ease-in-out;
+        display: flex;
+        align-content: center;
+        padding: 1.25rem;
+        background-color: $c-grey;
 
+    }
+
+    @include respond-min($bp-large) {
+        display: none;
+    }
+}
+
+.header-mobile-nav {
+    height:40vh;
+    background-color: $c-grey;
+    @include respond-min($bp-large) {
+        display: none;
+    }
+}
+
+.header-mobile-nav_ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    text-transform: uppercase;
+    background: $c-grey;
+    padding: .75rem;
+     font-size: 32px;
+     text-transform: uppercase;
+     font-weight: 700;
+     font-family: 'silkabold';
+     align-items: center;
+     justify-content: space-between;
+
+    li {
+        padding: 30px 0;
+    }
+}
+
+.header-nav_ul {
+    display: none;
+
+    @include respond-min($bp-large) {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+    
+        li {
+            padding: 0 20px;
+        }
+    }
+
+}
+
+.header-nav--about {
+    padding: 1rem;
+
+    &:hover {
+        background-image: url("/assets/toolkit/images/about-hover.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    &-active {
+        background-image: url("/assets/toolkit/images/about-bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        padding: 1rem;
 
     }
 }
 
-.header-page-title {
-    background-color: $c-mint;
-    flex:9;
-    padding:1rem
+.header-nav--portfolio {
+    padding: 1rem;
 
+    &:hover {
+        background-image: url("/assets/toolkit/images/portfolio-hover.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+
+    }
+
+    &-active {
+        background-image: url("/assets/toolkit/images/portfolio-bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        padding: 1rem;
+
+    }
 }
+

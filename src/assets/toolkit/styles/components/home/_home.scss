@@ -14,8 +14,29 @@
     border-bottom: 0;
     height: 99.5vh;
     width: 95vw;
+
+    h1 {
+        font-size: calc(26px + 28*((100vw - 320px)/800));
+    }
     @include respond-min($bp-medium) {
+        width:97vw;
+        height: 99.5vh;
+
+    }
+
+    @include respond-min($bp-large) {
+        width:98.6vw;
+
+        h1 {
+            font-size: calc(36px + 28*((100vw - 320px)/800));
+        }
+
+    }
+    @include respond-min($bp-x-large) {
         width:99vw;
+        h1 {
+            font-size: calc(46px + 30*((100vw - 320px)/800));
+        }
 
     }
 }
@@ -39,10 +60,15 @@
     grid-row: 2 / 3;        
     grid-column: 1 / 7;
 
+    @include respond-min($bp-medium) {
+        grid-column: 1 / 7;
+        grid-row: 2 / 3;
+        padding-left: 2rem;
+    }
+
     @include respond-min($bp-large) {
         grid-column: 1 / 7;
         grid-row: 3 / 4;
-        padding-left: 2rem;
     }
 
 
@@ -68,9 +94,9 @@
 
     h3 {
         padding-bottom: 20px;
+        font-size: 24px;
 
         @include respond-min($bp-medium) {
-            font-size: calc(12px + 20* ((100vw - 320px) / 800));
             padding-bottom: 30px;
         }
 
@@ -86,9 +112,9 @@
     display: grid;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     border-bottom: 0;
-    height: 99.5vh;
+    min-height: 99.5vh;
     width: 95vw;
 
     .grid-container {
@@ -101,15 +127,22 @@
         }
     }
 
+
     @include respond-min($bp-medium) {
-        width:99vw;
+        width:97vw;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 
     @include respond-min($bp-large) {
+        width:98.6vw;
+
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, 1fr);    
+    }
+
+    @include respond-min($bp-x-large) {
+        width:99vw;
     }
 }
 

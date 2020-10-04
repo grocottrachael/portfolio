@@ -111,7 +111,7 @@
 }
 
 .pd-project--gb {
-    background-color: $c-coral;
+    background-color: $c-pink;
 
     @include respond-min($bp-medium) {
         min-height: 470px;
@@ -119,7 +119,7 @@
 }
 
 .pd-project--red {
-    background-color: $c-lilac;
+    background-color: $c-yellow;
     margin-bottom: 5px;
 
     @include respond-min($bp-medium) {
@@ -128,7 +128,7 @@
 }
 
 .pd-project--lm {
-    background-color: $c-mint;
+    background-color: $c-green;
     margin-top: 5px;
 
     @include respond-min($bp-medium) {

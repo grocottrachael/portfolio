@@ -1,6 +1,5 @@
 .project {
     border: 10px solid $c-white;
-    background-color: $c-white;
 
 }
 
@@ -11,6 +10,8 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    background-color: #F2F1F1;
+
     
     ol,ul {
         margin: 1rem 0;
@@ -28,6 +29,8 @@
     p {
         margin-bottom:1rem;
         line-height: 1.75rem;
+        max-width: 800px;
+
 
     }
 
@@ -43,75 +46,53 @@
 
 }
 
-.project__content-padding {
-    background-color: $c-lilac;
-    margin-right: 10px;
-    flex:1;
-    padding: 1rem;
-}
-
 .project__content-wrapper {
-    flex: 9;
-    padding: 1rem;
-}
+    padding: 2rem 1rem 0 1rem ;
 
-.project__content__container {
-    margin-bottom: 4rem;
-    flex: 9;
+    h2 {
+        margin-top: 4rem;
+    }
+
+    p, ol, li {
+        max-width: 700px;
+    }
 
     @include respond-min($bp-medium) {
-        max-width: 67vw;
-
-
+        padding: 3rem 1rem 0 1rem ;
     }
 
     @include respond-min($bp-large) {
-        max-width: 55vw;
+        max-width: 90vw;
         padding-bottom: 1rem;
-
+        padding-left: 5vw;
     }
 
     @include respond-min($bp-x-large) {
-        max-width: 58vw;
+        max-width: 75vw;
+        padding-left: 15vw;
+
     }
 }
 
+
+
 .project__headline {
-    font-size: calc(24px + 20*((100vw - 320px)/800));
+    font-size: 24px;
     font-family: silkablack;
     line-height: 1.25;
     margin-bottom: 2rem;
 
 
     @include respond-min($bp-medium) {
-        font-size: calc(14px + 16*((100vw - 320px)/800));
+        font-size: 28px;
+
 
     }
 
     @include respond-min($bp-large) {
-        font-size: calc(16px + 16*((100vw - 320px)/800));
+        font-size: 28px;
         margin-bottom: 3rem;
 
-    }
-}
-
-.project__intro {
-    font-size: calc(20px + 20*((100vw - 320px)/800));
-    line-height: 1.25;
-    margin-bottom: 2rem;
-
-
-    @include respond-min($bp-medium) {
-        font-size: calc(13px + 13*((100vw - 320px)/800));
-    }
-
-    @include respond-min($bp-large) {
-        font-size: calc(12px + 12*((100vw - 320px)/800));
-        margin-bottom: 0;
-    }
-
-    @include respond-min($bp-x-large) {
-        max-width: 1200px;
     }
 }
 
@@ -120,7 +101,8 @@
     background-color: $c-black;
     padding: 10px;
     width: 95%;
-    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 0rem;
 
 
     &:before {
@@ -130,28 +112,20 @@
         right: 0;
         border-width: 20px 20px 30px 30px;
         border-style: solid;
-        border-color: $c-lilac #fff #fff $c-lilac;
+        border-color: $c-yellow #F2F1F1 #F2F1F1 $c-yellow;
         /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2); */
         display: block;
         width: 0;
     }
 
-    @include respond-min($bp-medium) {
-        margin: 0;
-        width: 100%;
-        margin-bottom: 0;
-
-    }
 
     @include respond-min($bp-large) {
-        margin: 3rem;
-        margin-right: 0;
-
+        margin-top: 3rem;
+        margin-left: 4rem;
+        width: 80%;
     }
 
-    @include respond-min($bp-x-large) {
-        margin: 4rem;
-    }
+
 
     .indented {
         margin-left:1rem;
@@ -165,6 +139,18 @@
     }
 
 
+}
+
+.project__breakout-img {
+    position: absolute;
+    right: -50px;
+    top: -80px;
+    z-index: 999;
+
+    @include respond-min($bp-large) {
+        right: -70px;
+        top: -50px;
+    }
 }
 
 .project__breakout__corner {
@@ -189,7 +175,7 @@
     z-index: 999;
     width: 0;
     height: 0;
-    border-top: 24px solid white;
+    border-top: 24px solid #F2F1F1;
     border-right: 24px solid transparent;
 }
 
@@ -249,7 +235,7 @@
     width: 100%;
     z-index: 99;
     position: relative;
-    background-color: $c-lilac;
+    background-color: $c-yellow;
 
     &:before {
         content: "";
@@ -258,7 +244,7 @@
         right: 0;
         border-width: 20px 20px 20px 20px;
         border-style: solid;
-        border-color: #ffe600 #fff #fff #ffe600;
+        border-color: $c-yellow #F2F1F1 #F2F1F1 $c-yellow;
         /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2); */
         display: block;
         width: 0;
@@ -270,26 +256,6 @@
     }
 
 
-    h3 {
-        @include respond-min($bp-medium) {
-            font-size: calc(16px + 16*((100vw - 320px)/800));
-            margin-bottom: 0;
-        }
-    }
-
-    p {
-        font-size: calc(20px + 10*((100vw - 320px)/800));
-
-        @include respond-min($bp-medium) {
-            font-size: calc(12px + 16*((100vw - 320px)/800));
-            margin-bottom: 0;
-        }
-        @include respond-min($bp-large) {
-            width: 90%;
-
-            font-size: calc(10px + 10*((100vw - 320px)/800));
-        }
-    }
 }
 
 .project__img {

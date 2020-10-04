@@ -5,20 +5,42 @@ name: product-design
 
 
 <div class="product-design">
-    
-    <div class="header">
-        <div class="header-logo">
 
-            <a href="/" class=""><h1>rg</h1></a>
+    <div class="header" x-data="{ sidebarOpen: false }">
+        <div class="header-wrapper">
+            <a href="/"  class="header-logo">
+
+                <span>rg</span>
+    
+            </a>
+         
+        
+            <div class="header-nav ">
+                <button class="header-nav_hamburger" @click="sidebarOpen = !sidebarOpen">
+            
+                </button>
+                <ul class="header-nav_ul">
+                    <li ><a class="header-nav--about" href ="/about"> about</a></li>
+                    <li><a class="header-nav--portfolio-active" href="/product-design">portfolio</a></li>
+                    <li><a href="https://www.triangirls.com" target="_blank">triangirls</a></li>
+    
+                </ul> 
+            </div>
 
         </div>
-     
-    
-        <div class="header-page-title ">
-            <div class=""><h1>product designer</h1></div> 
+
+
+        <div x-show="sidebarOpen" class="header-mobile-nav" style="display:none;">
+            <ul class="header-mobile-nav_ul">
+                <li ><a class="header-nav--about" href ="/about"> about</a></li>
+                <li><a class="header-nav--portfolio-active" href="/product-design">portfolio</a></li>
+                <li><a href="https://www.triangirls.com" target="_blank">triangirls</a></li>
+
+            </ul> 
         </div>
 
     </div>
+    
 
     <div class="pd-project pd-project--gb">
         <div class="pd-project__img">

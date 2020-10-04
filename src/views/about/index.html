@@ -6,19 +6,41 @@ name: about
 
 <div class="about">
 
-    <div class="header">
-        <!-- <div class="header-logo"> -->
+    <div class="header" x-data="{ sidebarOpen: false }">
+        <div class="header-wrapper">
+            <a href="/"  class="header-logo">
 
-            <a href="/" class="header-logo"><h1>rg</h1></a>
-
-        <!-- </div> -->
-     
+                <span>rg</span>
     
-        <div class="header-page-title ">
-            <div class=""><h1>about</h1></div> 
+            </a>
+         
+        
+            <div class="header-nav ">
+                <button class="header-nav_hamburger" @click="sidebarOpen = !sidebarOpen">
+            
+                </button>
+                <ul class="header-nav_ul">
+                    <li ><a class="header-nav--about-active" href ="/about"> about</a></li>
+                    <li><a class="header-nav--portfolio" href="/product-design">portfolio</a></li>
+                    <li><a href="https://www.triangirls.com" target="_blank">triangirls</a></li>
+    
+                </ul> 
+            </div>
+
+        </div>
+
+
+        <div x-show="sidebarOpen" class="header-mobile-nav" style="display:none;">
+            <ul class="header-mobile-nav_ul">
+                <li ><a class="header-nav--about-active" href ="/about"> about</a></li>
+                <li><a class="header-nav--portfolio" href="/product-design">portfolio</a></li>
+                <li><a href="https://www.triangirls.com" target="_blank">triangirls</a></li>
+
+            </ul> 
         </div>
 
     </div>
+
 
     <div class="about-content">
         <div class="about-content--left">
@@ -35,12 +57,7 @@ name: about
 
 
             <h3>Hiya!</h3>
-            <p>I think my Twitter bio sums me up: 👩🏽‍💻 Product Designer at 
-                @geckoboard. ‍👯‍♀️ Co-founder & organiser of @triangirlsocial.
-                 🤦🏽‍♀️ Daft Northerner the rest of the time.
-            </p>
 
-            <h3>Wanna know more?</h3>
             <p>
                 I’m a Product Designer at <a class="body-link" target="_blank" href="https://www.geckoboard.com/">Geckoboard</a>, I have over 8 
                 years experience in the industry and working in small 

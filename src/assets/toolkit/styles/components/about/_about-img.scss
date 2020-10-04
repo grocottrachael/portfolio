@@ -22,11 +22,8 @@ align-self: center;
 
     @include respond-min($bp-large) {
         right:10%;
-        bottom:15%;
-    }
-
-    @include respond-min($bp-x-large) {
-        right:10%;
         bottom:10%;
     }
+
+
 }

@@ -4,7 +4,7 @@
  * Visual representation of a button
  */
 
-$button-background: $c-mint;
+$button-background: $c-grey;
 $button-border: 5px solid $c-black;
 $angle: 8px;
 $angle-o: 4px;
@@ -16,7 +16,7 @@ $angle-o: 4px;
     position: relative;
     display: inline-block;
     padding: 15px 25px;
-    background-color: $c-mint;
+    background-color: $c-grey;
     border: 5px solid $c-black;
     text-transform: uppercase;
     color: $c-black;
@@ -27,7 +27,7 @@ font-family: silkablack;
     text-decoration: none;
     cursor: pointer;
 
-    @include respond-min($bp-medium) {
+    @include respond-min($bp-x-large) {
         font-size: calc(8px + 8 * ((100vw - 320px) / 800));
 
     }
@@ -99,20 +99,6 @@ font-family: silkablack;
   
   a.btn { position: relative; }
   
-
-
-//     &,
-//     &:hover,
-//     &:active,
-//     &:focus {
-//         text-decoration: none;
-//     }
-
-//     &:hover {
-//         background: rgb(198, 198, 198);
-//         transition: all 0.3s;
-//     }
-// }
 
 .btn-container {
     z-index: 99;
