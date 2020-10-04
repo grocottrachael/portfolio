@@ -19,7 +19,7 @@
         font-size: calc(26px + 28*((100vw - 320px)/800));
     }
     @include respond-min($bp-medium) {
-        width:97vw;
+        width: 97vw;
         height: 99.5vh;
 
     }
