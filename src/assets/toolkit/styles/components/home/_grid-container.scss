@@ -70,9 +70,11 @@
 
 .grid-container--3 {
 
-    background-image: url("/assets/toolkit/images/home/pattern3.svg");
+    background: url("/assets/toolkit/images/home/pattern3.svg");
     background-color: $c-green;
-    background-repeat: space;
+    background-repeat: none;
+    background-size: contain;
+    background-position: center;
     grid-column: 4 / 7;
     grid-row: 5 / 7;
 
@@ -440,4 +442,5 @@
 
 .grid-container_read-more {
     padding-top: 1rem;
+    font-family: 'silkamedium';
 }
