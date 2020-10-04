@@ -27,11 +27,13 @@
 
 .grid-container--1 {
 
-    background-image: url("/assets/toolkit/images/home/pattern1.svg");
+    background: url("/assets/toolkit/images/home/pattern1.svg");
     grid-column: 1 / 4;
     grid-row: 1 / 3;
-    background-position: top;
     background-color: $c-grey;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
 
     @include respond-min($bp-medium) {
 
@@ -443,4 +445,9 @@
 .grid-container_read-more {
     padding-top: 1rem;
     font-family: 'silkamedium';
+
+    span {
+        font-family: 'silkamedium';
+ 
+    }
 }
