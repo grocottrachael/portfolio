@@ -255,13 +255,11 @@
 .pd-illustration_img {
     filter: grayscale(100%);
     transition: all .15s ease-in-out;
-    object-fit: cover;
 
-    // &:hover {
-    //     filter: grayscale(0%);
-    //     transition: all .15s ease-in-out;
-
-    // }
+    @include respond-min($bp-large) {
+        object-fit: cover;
+  
+    }
 }
 
 .pd-illustration_img_colour {
