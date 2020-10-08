@@ -203,3 +203,40 @@
     }
 }
 
+.header--subnav {
+        display: none;
+
+    
+
+    @include respond-min($bp-large) {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        background-color: $c-grey;
+        display: flex;
+        margin-top: 10px;
+        text-transform: uppercase;
+        padding: .5rem;
+        font-weight: 700;
+        font-family: 'silkabold';
+
+    
+        li {
+            padding: 0 20px;
+        }
+
+        .header--subnav_li {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+        
+            li {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
